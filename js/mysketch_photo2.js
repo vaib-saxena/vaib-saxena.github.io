@@ -1,25 +1,23 @@
-const IMAGE_URL = "https://avatars.githubusercontent.com/u/5019072?v=3";
-const FRACTION_SIZE = 100;
-const ORIGIN_CIRCLE_RADIUS = 3.5;
+const IMAGE_URL = "https://raw.githubusercontent.com/vaib-saxena/vaib-saxena.github.io/master/img/ab.png";
+const FRACTION_SIZE = 170;
+const ORIGIN_CIRCLE_RADIUS = 2.5;
 const PADDING = 50;
 var canvas;
 
-let repulsionChangeDistance = 3;
+let repulsionChangeDistance = 8;
 let pointSystem = null;
 let targetImage = null;
 
-// ==================================================
-// PopCircle クラス
-// ==================================================
+
 class PopCircle {
   constructor(originPosition, originRadius, originColor) {
     this.position = originPosition.copy();
     this.origin = originPosition.copy();
     this.velocity = createVector(random(0, 10), random(0, 10));
-    this.repulsion = random(1.0, 2.0);
+    this.repulsion = random(1.0, 3.0);
 		this.originRepulsion = random(0.01, 0.02);
-		this.mouseRepulsion = 0.1;
-    this.gravity = 3;
+		this.mouseRepulsion = 0.3;
+    this.gravity = 5;
     this.radius = this.originRadius = originRadius;
     this.color = originColor;
   }
@@ -65,9 +63,6 @@ class PopCircle {
   }
 }
 
-// ==================================================
-// PopCircleSystem クラス
-// ==================================================
 class PopCircleSystem {
   constructor() {
     this.points = [];
@@ -129,9 +124,6 @@ class PopCircleSystem {
   }
 }
 
-// ==================================================
-// p5の関数
-// ==================================================
 function preload() {
   targetImage = loadImage(IMAGE_URL);
 }

@@ -1,3 +1,4 @@
+const IMAGE_URL = "https://raw.githubusercontent.com/vaib-saxena/vaib-saxena.github.io/master/img/ab.png";
 const FRACTION_SIZE = 100;
 const ORIGIN_CIRCLE_RADIUS = 3.5;
 const PADDING = 50;
@@ -5,7 +6,7 @@ var canvas;
 
 let repulsionChangeDistance = 3;
 let pointSystem = null;
-let targetImage;
+let targetImage = null;
 
 // ==================================================
 // PopCircle クラス
