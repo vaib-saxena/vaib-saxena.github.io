@@ -1,0 +1,3 @@
+
+Areas with very little change can have wider and less flexible hinges,
+while areas with a lot of change will need thinner and more flexible hinges.

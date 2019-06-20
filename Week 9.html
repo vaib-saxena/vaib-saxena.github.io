@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Week 9-Vaibhav Saxena</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Google Fonts -->   
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		  <li> <a href="index.html"><strong>Home</strong></a> </li>
+		  <li> <a href="Final Project.html"><strong>Final Project</strong></a> </li>
+		  <li> <a <a><strong>Weekly Projects</strong></a></a>
+	         <ul>
+		        <li> <a href="Week 1.html"><strong>Principles and Practices</strong></a> </li>
+	            <li> <a href="Week 2.html"><strong>Project Management</strong></a> </li>
+				<li> <a href="Week 3.html"><strong>Computer-aided Design</strong></a> </li>
+			    <li> <a href="Week 4.html"><strong>Computer-controlled Cutting</strong></a> </li>
+				<li> <a href="Week 5.html"><strong>Electronics Production</strong></a> </li>
+				<li> <a href="Week 6.html"><strong>3D Scanning and Printing</strong></a> </li>
+				<li> <a href="Week 7.html"><strong>Electronics Design</strong></a> </li>
+				<li> <a href="Week 8.html"><strong>Computer-controlled Machining</strong></a> </li>
+				<li> <a href="Week 9.html"><strong>Embedded Programming</strong></a> </li>
+				<li> <a href="Week 10.html"><strong>Molding and Casting</strong></a> </li>
+				<li> <a href="Week 11.html"><strong>Input Devices</strong></a> </li>
+				<li> <a href="Week 12.html"><strong>Output Devices</strong></a> </li>
+				<li> <a href="Week 13.html"><strong>Applications and Implications</strong></a> </li>
+				<li> <a href="Week 14.html"><strong>Networking and Communications</strong></a> </li>
+				<li> <a href="Week 15.html"><strong>Mechanical Design</strong></a> </li>
+				<li> <a href="Week 16.html"><strong>Interface and Application Programming</strong></a> </li>
+				<li> <a href="Week 17.html"><strong>Machine Design</strong></a> </li>
+				<li> <a href="Week 18.html"><strong>Wildcard Week</strong></a> </li>
+				<li> <a href="Week 19.html"><strong>Invention, intellectual property, Income</strong></a> </li>
+				<li> <a href="Week 20.html"><strong>Project Development</strong></a> </li>	
+			  </ul>
+	        </li>
+		  <li> <a href="contact.html"><strong>Contact</strong></a> </li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <h1 class="brand-heading">Week 9</h1>
+			  <p class="intro-text"><strong> Embedded Programming </strong></p>
+			  <a href="#single-project" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
+	<div class="row"> 
+	 <div class="col-lg-10 col-lg-offset-1">
+		 </p><h2>Nimbling steps towards giving life to a PCB</h2>
+	    <p class="text-justify"><font color="grey"><i>
+			<b>1. Reading a data sheet and comprehending it can be a nightmare(atleast it was for me) but don't lose hope. The trick is to move back and forth between reading and doing some programming with the board.<br><br>
+			2. Routing was like "zen" to me and I kind of got a knack for it. It isn't a crime when you get stuck and need some auto-routing help. The autorouting's solution might not work but it can drive you to think a very different way.<br><br>
+			3. Milling the board without any short for the first time really feels good. I had some issue with the board and had to mill it again. These next versions weren't milling properly, felt like I ran out of luck.</i></font><br><br></b>	
+		</p>
+		  <h2>Back to basics 2.0</h2>
+	    <p><strong>Steps to make your PCB board do something</strong></p>
+	    <p class="text-justify">
+			1) Write a program(there are various programming platforms available, choose wisely) and tell the board what to do. <br>
+2) Compile: turn the program into machine code.<br>
+3) Use the programmer to transfer the machine code to the board. The programmer is like the flash card reading for retrieving or storing data. It does the hard work to verify and transform data.<br>
+4) Debug and test. <br><br>
+			
+Some common terminalogies to be acquainted with are:<br><br>
+			1. What is EEPROM?<br>
+Electrically Erasable Programmable Read Only Memory. It is non-volatile<i>(non-volatile memory doesn’t require power to maintain the integrity of stored data, so even if your power goes out, you don’t lose your data. In other words, nonvolatile memory won’t “forget” the data it has stored when the disk is turned off)</i> in nature and don’t lose data on power cut off. <br><br>
+			2. What is SRAM?<br>
+Static Random Access Memory. It is volatile in nature and they lose data content when the power is switched off.
+Follow this <i><a href="https://www.youtube.com/watch?v=kU2SsUUsftA" target="_blank">link</a></i> <br><br>
+			3. What is flash memory?<br>
+			Flash storage is a data storage technology based on high-speed, electrically programmable memory. 
+The speed of flash storage is how got its name: It writes data and performs random I/O operations in a flash. Flash storage uses a type of nonvolatile memory called flash memory. <br><br>	
+			4. What is make and C file?
+If you fast forward to next few weeks or go to hello echo board, Neil provided us with two kind of file one make and the other 'C' file. Make file contains a set of instructions to be executed. 'C' file contains the actual program that is to be dumped onto the microcontroller. The makefile command converts the 'C' file to hex and sends it to the microcontroller.<br><br>
+			<b>The AVR chip runs whatever program is stored in the flash, uses the RAM for temporary storage and the EEPROM for longer term storage.</b>		
+		</p>
+		<h2>Datasheet</h2>
+		  <p class="text-justify">
+		What is a datasheet? <br>
+			 Every component used in making a PCB board (resistors, diode, microcontrollers etc) has certain specifications as to how it can be used. In a more formal manner, It is a document that summarizes the performance, technical and software characteristics in enough detail that anyone can integrate the component into a system.
+It usually made by the component manufacturer.An electronic datasheet specifies characteristics in a formal structure that allows the information to be processed by a machine. Such machine readable descriptions can facilitate information retrieval, display, design, testing, interfacing, verification, and system discovery (wikipedia).
+		</p>
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 7/abc.jpg" alt="">
+		  <div class="slider__caption">Pinout diagram for ATtiny 44</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 7/08_data5.jpg" alt="">
+      <div class="slider__caption">Description of various alternative function of Pins</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_1.jpg" alt="">
+      <div class="slider__caption">Fab Library loaded in EAGLE, highlighted in blue in upper left corner</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_2.jpg" alt="">
+		  <div class="slider__caption">Opening a new project called "Hello World"</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_3.jpg" alt="">
+		  <div class="slider__caption">Start by adding a frame that creates a boundary within which components can be placed. This is done by typing "ADD" in command line and opens a new dialog box and typing "frames". Choose based on the need</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_4.jpg" alt="">
+		   <div class="slider__caption">All the components added. They can be placed around.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_5.jpg" alt="">
+		   <div class="slider__caption">Creating the schematic involves indirectly joining components by various methods. Also, VCC and GND forms a major and necessary part of every component </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_6.jpg" alt="">
+		   <div class="slider__caption">Adding the schematic of Charlieplexing (on the right). It inovlved lighting 20 LEDs using only 5 pins</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_6a.jpg" alt="">
+		   <div class="slider__caption">IMPORTANT STEP: Checking the schematic for errors and warnings</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_6b.jpg" alt="">
+		   <div class="slider__caption">Some of the warnings can be ignored based on your design</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_7.jpg" alt="">
+		   <div class="slider__caption">Shifting from schematic mode to board mode where we place the components and create/route path for them</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+		   <p class="text-justify">
+			    I chose Eagle over other softwares to design my PCB board because I had earlier(Week 5) tried using some basic features of the software
+and found its UI to be very friendly.<br><br>
+Next up, Fab network has created a library for EAGLE consisting of components commonly used in PCB design during the Fab Academy course.<br><br>
+1. Download the Fab library for Eagle <i><a href="https://www.autodesk.com/products/eagle/free-download" target="_blank">here </a></i>.<br>
+2. Place the downloaded file fab.lbr in C:\Users\Vaibhav\AppData\Roaming\Eagle\lbr. I created a folder named Fab in lbr folder and placed the fab.lbr file there.<br>
+3. Once you start EAGLE you will automatically see the fab.lbr in the control panel on the left side along with other predefined libraries.<br>
+4. To get going initially, I downloaded the a sample schematic file from the Fab Academy tutorials.<br>
+5. Next up, I went into the Project directory of Eagle and created a new folder named Fab and inside that another folder named Hello World, to 
+keep the structure clean and keep my files for this assignment. <br>
+6. By right clicking on the folder "hello world", I create a new project and a new Schematic. <br>
+7. A schematic window opens up where we can draw the circuits without worrying about the component placement.<br>
+8. I started by adding a frame so that my circuit looks neat. This is done by either typing add or in the left tab, look for AddPart.
+This will open a new window with the library and you can go to frames and choose the one you like depending on the size of your circuit.<br>
+9. One important tip while searching for components in the library. Use suffix *(wildcard on multiple characters) and ?(wildcard on
+ single character)<br>
+10. rcl library is highly used library in Eagle. <br><br>
+				
+		The basic components of the echo hello world board are:<br><br>
+
+ ATTiny 44 as MCU x1 <br>
+ 6 Pin AVR ISP Header x1<br>
+ FTDI Header x1<br>
+ 20 MHz Resonator x1<br>
+ 1 uF Capacitor x1<br>
+ 10K Ohm Resistor x1<br><br>
+
+and I further added the following:<br><br>
+
+0K Ohm Resistor x1<br>
+Switch x1<br>
+Red LED for power x1 <br>
+Green LED for Charlieplexing x20<br>
+499 Ohm resistor x5<br><br>
+			   
+			   The reset button resets the whole IC, it is by default in active high state. You can attach a switch button to reset it manually to active low state. <br>
+
+11. To make connections between the components, I extended a line from the individual components using NET tool and then typed the same unique name between
+various components to join them. If one wants one can also label them. <br>
+12. Since I had a bad experience about how to know whether the PCB board is receiving power or not, hence I added one Red LED as soon the as the board receives power.<br>
+13. Now I wanted to play around a bit with input output  and had few pins left on the ATtiny 44, hence I chose charlieplexing, a way to light up multiple LEDs in a cutomized pattern using fewer pins. I took reference of Nicolo Gnecchi's work, he has documented Charlieplexing beautifully. It can be found <i><a href="http://fab.academany.org/2018/labs/barcelona/students/nicolo-gnecchi/output-devices/" target="_blank">here </a></i>.  <br>
+14. Before moving forward, an important step is to check whether all pins are connected or not. One might get some errors if some pins are unused, these can be ignored.<br>
+			   
+			   
+	
+		</p>
+	<h2>Programming</h2>
+	 <p><strong>Embedded C on Atmel Studio</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_11.jpg" alt="">
+		    <div class="slider__caption">Select the above marked options to open a new project</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_12.jpg" alt="">
+		   <div class="slider__caption">Selecting ATtiny44 as the board, you can select the one you are using on your PCB</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_13.jpg" alt="">
+		   <div class="slider__caption">A new window opens where you can write your program/code</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_14.jpg" alt="">
+		    <div class="slider__caption">Go to Tools>external tool and add the above information to enable dumping the program on the PCB </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_15a.jpg" alt="">
+		   <div class="slider__caption">Once you have written your code/program click on build solution to check if the program works properly or not</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_15.jpg" alt="">
+		   <div class="slider__caption">You will see this once the program has been compiled</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_16.jpg" alt="">
+		    <div class="slider__caption">A window will flash diplaying the above lines and the program will be dumbped onto the IC</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify">In ATtiny 44 there are two kind of ports, Port A or PA(8 in number) and Port B or PB(4 in number).<br><br>
+
+1. I wanted to see if I could run the same program using C. The layout of the program in Arduino IDE and C is kind of same, the only difference is between the syntaxes used.<br>
+2. In Arduino IDE we define port for output as pinMode(PA0, OUTPUT); while in C we define it as DDRA = 0b00000001, where DDRA means(data direction register for port A), 0b means binary value and 00000001 means that pin 0 is output(counted from the left).<br>
+3. void loop() in Arduino IDE is replaced by while() loop in C. digitalWrite(PA0, HIGH) in Arduino IDE is replaced by PORTA = 0b00000001.<br>
+4. delay() is replaced by _delay_ms().<br>
+5. I also realized that once you have written the programme in C, you can flash the program from Arduino IDE directly to your board.<br><br>
+			
+
+			The following are the steps to run the C programme from Atmel Studio.<br><br>
+1. C programme can run directly on Atmel Studio. It can also import Arduino sketches. I downloaded the Atmel Studio 7.0 (build 1931) web installer. Please check all the architecture while downloading. Download it from <i><a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7" target="_blank">here </a></i>.<br><br>
+2. Go to File>New> Project and click okay. A new window will open up, click on C/C++ in the upper left part and click GCC C Executable Project. <br><br>
+3. Select your device by typing "ATtiny" and select "ATtiny 44". It will open a new window where you can write the program in C.<br><br>
+4. Now go to Tool>External Tools and add the following information<br>
+Title:- USBTiny ISP Debug<br>
+Command :- avrdude.exe<br>
+Arguments :- -c usbtiny -p attiny44 -U flash:w:$(ProjectDir)Debug\$(TargetName).hex:i<br>
+And click save. This will help us to directly programme our PCB using USBtiny.<br><br>
+5. You can also write the code or just copy another code in C. <br>
+6. Once your program is ready click, compile the program by clicking Build in upper tab and selecting Build Solution. If its reports successfully build at the bottom of the page in the Output section, an extension with hex file will be generated which can be uploaded to target board using a programmer.<br><br>
+7. Now go to Tools > select USBTiny ISP to upload the program to the board. A command prompt screen will flash and the program is uploaded to the board. <br>
+			
+			One point of investigation here is that when I use Arduino IDE I have to burn a bootloader onto the board before sending the code/program to the PCB Board while on the other hand in Atmel Studio I only have to upload the program directly after building solution. 
+	</p>
+		  <p><strong>USBtiny to programme the PCB through Arduino IDE</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_1.jpg" alt="">
+		    <div class="slider__caption">Adding library for ATtiny microcontrollers </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_2.jpg" alt="">
+		   <div class="slider__caption">Board manager displays all newly added library</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_3.jpg" alt="">
+		   <div class="slider__caption">Boards manager</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_4.jpg" alt="">
+		    <div class="slider__caption">Selecting ATtiny 44 from the processor </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_5.jpg" alt="">
+		   <div class="slider__caption">The settings used just before burning bootloader</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_6.jpg" alt="">
+		    <div class="slider__caption">Bootloading successfull</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_7.jpg" alt="">
+		  <div class="slider__caption">Programme successfully uploaded</div>
+	  </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/IMG_9641.JPG" alt="">
+		  <div class="slider__caption">Board responding to the programme uploaded</div>
+	  </div>
+	  <div class="slider__item">
+     <iframe width="910" height="512" src="https://www.youtube.com/embed/ZxEZTY-lQcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 
+	  </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify">Arduino IDE is a very popular platform to programme your PCBs and I used it as a starting point. It is based on C/C++ and I later found out that you can directly write C programme here and send it to your board. <br><br>
+			
+			1. I am using the PCB I made in the previous week for embedded programming this week. My PCB board uses ATtiny 44. I will be using USBtiny to 
+program the board using Arduino IDE. Arduino IDE doesn't have ATtiny 44 as one of the boards listed by deault. 
+Hence the first step to add the ATtiny 44 board in the boards list. The steps followed are as follows:<br><br>
+
+2. Open File > Preferences > Settings tabs. At the bottom, look for Additional Boards Manager URLs and add:
+https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json and click ok.<br><br>
+
+3.Open the boards manager in the Tools > Board menu. Type "ATtiny" in the search box and you will see ATtiny entry and click "Install". 
+Now close the boards manager.<br><br>
+ 
+4. Now if you go to Tools > Board and swipe at the bottom, you will see ATtiny MCUs.<br><br>
+
+5. Go to Tools, select ATtiny 24/44/84 from boards, select "ATtiny 44" from processor, select "External 20Mhz" from clock and port accordingly. Lastly select USBtinyISP as programmer.<br><br>
+
+6. Before burning the bootloader, connect SPI header pins of USBtinyISP to your PCB board, which you want to programme. Connect USBtinyISP to USB port of your PC.<br><br>
+
+7. Now click "Burn bootloader". You will see lot of things running and finally see "Done burning bootloader".<br><br>
+8. Now to check whether your board has been bootloaded and can run a program, run a Blink program, from the examples section of Arduino IDE. I edited the Blink program and changed the pin according to my board. <br><br>
+9. Once the program has been uploaded, you will see the LED blinking.<br><br>
+			
+			Following is the modified blink code I used<br><br>
+
+			// the setup function runs once when you press reset or power the board<br>
+void setup() { <br>
+  // initialize digital pin LED_BUILTIN as an output.<br>
+  pinMode(PA0, OUTPUT);<br>
+  pinMode(PA2, OUTPUT);<br>
+  pinMode(PA4, OUTPUT);<br>
+  pinMode(PA6, OUTPUT);<br>
+}<br>
+
+// the loop function runs over and over again forever<br>
+void loop() {<br>
+  digitalWrite(PA0, HIGH);   // turn the LED on (HIGH is the voltage level)<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA0, LOW);    // turn the LED off by making the voltage LOW<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA2, HIGH);   // turn the LED on (HIGH is the voltage level)<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA2, LOW);    // turn the LED off by making the voltage LOW<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA4, HIGH);   // turn the LED on (HIGH is the voltage level)<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA4, LOW);    // turn the LED off by making the voltage LOW<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA6, HIGH);   // turn the LED on (HIGH is the voltage level)<br>
+  delay(200);                       // wait for a second<br>
+  digitalWrite(PA6, LOW);    // turn the LED off by making the voltage LOW<br>
+  delay(200);                       // wait for a second<br>
+}<br><br>
+	
+			
+	
+	
+	</p>
+		  <p><strong>Arduino as ISP to programme the PCB through Arduino IDE</strong></p>
+	 <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 9/Screenshot_9.jpg" alt="">
+		    <div class="slider__caption">Opening the Arduino as ISP sketch from the examples</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_9a.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_9b.jpg" alt="">
+		   <div class="slider__caption">Successful uploading of Arduino ISP sketch</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_10.jpg" alt="">
+		   <div class="slider__caption">Burning the bootloader using the settings displayed </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 9/Screenshot_10a.jpg" alt="">
+		   <div class="slider__caption">Uploading the similar sketch as the one uploaded last time. </div>
+    </div>
+	  <div class="slider__item">
+      <iframe width="910" height="512" src="https://www.youtube.com/embed/vzW0nSdsC8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+			  1. We will follow above steps as mentioned for USBtiny as ISP. We will have to first turn Arduino into an ISP.<br><br>
+2. Go to File>Examples>ArduinoISP and select ArduinoISP sketch and connect your Arduino using the cable.(don't upload the sketch now) <br>
+3. Now go to the Tools tab and select board as "Arduino Uno" and the COM port to which you Arduino is connected. Now upload the sketch.<br><br> 
+4. Next connect: <br>
+Arduino Pin 10: RESET<br>
+Arduino Pin 11: MOSI<br>
+Arduino Pin 12: MISO<br>
+Arduino Pin 13: SCK<br>
+Arduino's GND to GND of 2x3 SPI header<br>
+Arduino's 5V to VCC of 2x3 SPI header<br><br>
+5. Now go to Tools again, select board as "ATtiny24/44/84", select processor as "ATtiny44", Clock "External 20MHz", Port as mentioned and Programmer as "Arduino as ISP". <br><br>
+6. Now click "Burn Bootloader" and you will see, something like this. You can now upload sketches from Arduino to your board.<br><br>
+7. Now to check whether your board has been bootloaded and can run a program, I ran the same Blink program again and it was uploaded successfullly.<br><br>
+
+			 </p>
+ <p><strong>Charlieplexing using USBtiny through Arduino IDE</strong></p>
+	 <br>
+<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_18.jpg" alt="">
+		    <div class="slider__caption">The new PCB board with jumpers</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+				I had missed few horizontal tracks in my previous board, that didn't make it look very nice. Also, the board was not responding to "hello world", hence I made few changes to the board and milled it again. I followed the same process to solder the vertical connections between LEDs and programme it. 
+</p>
+<p><strong>Group Assignment</strong></p>
+	 <br>
+<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 7/SHots/Screenshot_18.jpg" alt="">
+		    <div class="slider__caption">The new PCB board with jumpers</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+				The test equipment used to observe the operation of a microcontroller circuit board are:<br><br>
+			  1. Digital Voltmeter: A voltmeter is an instrument used for measuring electrical potential difference between two points in an electric circuit.<br>
+			  2. Oscillosope: An oscilloscope is a laboratory instrument commonly used to display and analyze the waveform of electronic signals.<br>
+			  3. Regulated Power Supply: 
+</p>
+    </div>
+  </div>
+</div>
+		 </div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		ALL PROJECTS WERE CREATED UNDER CREATIVE COMMONS LICENSE<br/>
+		CREATED AT VIGYAN ASHRAM, PUNE UNDER FAB ACADEMY
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/myeqlr.js"></script>
+</body>
+</html>

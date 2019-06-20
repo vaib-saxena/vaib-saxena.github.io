@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Week 11-Vaibhav Saxena</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Google Fonts -->   
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		  <li> <a href="index.html"><strong>Home</strong></a> </li>
+		  <li> <a href="Final Project.html"><strong>Final Project</strong></a> </li>
+		  <li> <a <a><strong>Weekly Projects</strong></a></a>
+	         <ul>
+		        <li> <a href="Week 1.html"><strong>Principles and Practices</strong></a> </li>
+	            <li> <a href="Week 2.html"><strong>Project Management</strong></a> </li>
+				<li> <a href="Week 3.html"><strong>Computer-aided Design</strong></a> </li>
+			    <li> <a href="Week 4.html"><strong>Computer-controlled Cutting</strong></a> </li>
+				<li> <a href="Week 5.html"><strong>Electronics Production</strong></a> </li>
+				<li> <a href="Week 6.html"><strong>3D Scanning and Printing</strong></a> </li>
+				<li> <a href="Week 7.html"><strong>Electronics Design</strong></a> </li>
+				<li> <a href="Week 8.html"><strong>Computer-controlled Machining</strong></a> </li>
+				<li> <a href="Week 9.html"><strong>Embedded Programming</strong></a> </li>
+				<li> <a href="Week 10.html"><strong>Molding and Casting</strong></a> </li>
+				<li> <a href="Week 11.html"><strong>Input Devices</strong></a> </li>
+				<li> <a href="Week 12.html"><strong>Output Devices</strong></a> </li>
+				<li> <a href="Week 13.html"><strong>Applications and Implications</strong></a> </li>
+				<li> <a href="Week 14.html"><strong>Networking and Communications</strong></a> </li>
+				<li> <a href="Week 15.html"><strong>Mechanical Design</strong></a> </li>
+				<li> <a href="Week 16.html"><strong>Interface and Application Programming</strong></a> </li>
+				<li> <a href="Week 17.html"><strong>Machine Design</strong></a> </li>
+				<li> <a href="Week 18.html"><strong>Wildcard Week</strong></a> </li>
+				<li> <a href="Week 19.html"><strong>Invention, intellectual property, Income</strong></a> </li>
+				<li> <a href="Week 20.html"><strong>Project Development</strong></a> </li>	
+			  </ul>
+	        </li>
+		  <li> <a href="contact.html"><strong>Contact</strong></a> </li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <h1 class="brand-heading">Week 11</h1>
+			  <p class="intro-text"><strong> Input Devices </strong></p>
+			  <a href="#single-project" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
+	<div class="row"> 
+	 <div class="col-lg-10 col-lg-offset-1">
+		 </p><h2>Lets sense and move </h2>
+	    <p class="text-justify"><font color="grey"><i>
+			<b>1. I strongly felt that one board, modular in nature can be very useful for the next couple of weeks that are purely devoted to electronics. <br><br>
+			2. Routing was like "zen" to me and I kind of got a knack for it. It isn't a crime when you get stuck and need some auto-routing help. The autorouting's solution might not work but it can drive you to think a very different way.<br><br>
+			3. Milling the board without any short for the first time really feels good. I had some issue with the board and had to mill it again. These next versions weren't milling properly, felt like I ran out of luck.</i></font><br><br></b>	
+		</p>
+		  <h2>Modular board</h2>
+	    <p><strong>Design and milling of a modular input-output board</strong></p>
+	    
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/IMG_9979.JPG" alt="">
+		  <div class="slider__caption">The modular board used for output devices. I made this board in such a way such that it could be used for both input devices as well as output devices week</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_1.jpg" alt="">
+      <div class="slider__caption">Running two servo motors in one direction but it didn't turn all the way to 180 degree</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_2.jpg" alt="">
+      <div class="slider__caption">Running two servo motors that rotated close to 180 degrees and back because of reverse for() loop added after first for() loop</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_3.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_4.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_5.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_6.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_7.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_8.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_9.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_10.jpg" alt="">
+		  <div class="slider__caption">Running two servos as a starting point using arduino</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section>  
+		   <p class="text-justify">
+			This week started on a bit of frustrating note. Most the things that I tried to do weren't working. The Arduino codes were not working either. I was just looking for a simple way to run the two servos. Neil's code did work in the end but I couldn't properly understand it. Hence, I made it a point to understand Neil'code and make my servos run. <br><br>
+
+A good place to understand servo motors is <i><a href="https://www.youtube.com/watch?v=ditS0a28Sko" target="_blank">here</a></i> . In short it is a DC motor with potentiometer and some electrical components. One good thing about servos it that you can control them through PWM. Hence, they will rotate when a voltage is passed and will stop when it isn't.<br><br> 
+
+One thing of notice here is that, if you are using software servo library then you will have to change inside Softwareserial.h file a particular line otherwise an error will keep on coming. That line is "WProgram.h" and change it to "Arduino.h".
+
+Now the servos were moving but the only issue I was now facing was that they were not rotating 180 degrees as expected. They were only moving like 120 degrees approx. This was only one for loop. But if you introduce another for loop that takes it back, it rotates 180 degrees. Also, the ideal delay should be 20ms because of 50 Hz cycle of the servo.
+			
+			
+		</p>
+			   
+			   
+	
+		</p>
+
+	 <p><strong>Driving Servos using embedded C</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_12.jpg" alt="">
+		    <div class="slider__caption">The C code to be uploaded to run servos in six increments in clockwise and anti clockwise direction</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/servo_operation.png" alt="">
+		   <div class="slider__caption">Servo operation</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/ServoTiming.png" alt="">
+		   <div class="slider__caption">Servo Timings and position</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_13.jpg" alt="">
+		   <div class="slider__caption">Selecting the correct settings, since I used 20 Mhz resonator, I will choose clock as 20 Mhz</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_14.jpg" alt="">
+		   <div class="slider__caption">Successfull uploading of C code</div>
+    </div>
+	   
+	  <div class="slider__item">
+      <iframe width="910" height="512" src="https://www.youtube.com/embed/-MtKOy7gJ10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_15.jpg" alt="">
+		    <div class="slider__caption">The C code with while() loop to run the servos without increments from 0 to 180 degree and back</div>
+    </div>
+	  <div class="slider__item">
+      <iframe width="910" height="512" src="https://www.youtube.com/embed/d6rZvaGevSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+	  
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify">Next was to move on to Neil's code and try it. Probably doing the similar thing as above(rotating the servos by 180 dgrees) and modifying it further to do other things. I choose Neil's second code where you could rotate servos from the software side. At 1 ms, it remains at its position, at 1.5 ms it rotates 45 degree(mid-way) and at 2 ms it rotates 90 degrees. I preferred directly sending the code using Arduino IDE using the C file. <br><br>
+
+The highlights of this code are: 2 motors can be run simultaneously on two different PWM pins, hence those two PWM pins are defined initially,<br>
+#define PWM_pin_0 (1 << PA6)<br>
+#define PWM_pin_1 (1 << PA7)<br><br>
+
+
+If we want to run at the full 8MHz and not mess with the LFuse and avoid unintentional changes of clock frequency, a special write procedure must be followed. The CLKPCE bit must be written to logic one to enable change of the CLKPS bits. The CLKPCE bit is only updated when the other bits in CLKPR are simultaniosly written to zero. CLKPCE is cleared by hardware four cycles after it is written or when the CLKPS bits are written. Rewriting the CLKPCE bit within this time-out period does neither extend the time-out period, nor clear the CLKPCE bit.<br><br>
+
+   //<br>
+   // set clock divider to /1<br>
+   //<br>
+   CLKPR = (1 << CLKPCE);<br>
+   CLKPR = (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0);<br>
+			From the data sheet(Page 32, table 6-11):<br><br>
+
+Next the while loop starts and inside while loop there are several for() loops. Each for() loop either rotates one or both the motors.<br><br> 
+for (i = 0; i < loop_count; ++i) { <br>
+         set(PWM_port,PWM_pin_0); <br>
+         set(PWM_port,PWM_pin_1); <br>
+         _delay_us(1000); <br>
+         clear(PWM_port,PWM_pin_0); <br>
+         clear(PWM_port,PWM_pin_1); <br>
+         _delay_us(19000); <br>
+         }<br><br>
+This particular code snippet turns both PWM pins on/high and sends a voltage for 1 ms/1000 us, just after that it sets both PWM pins off/low and stops sending voltage for 19 ms/19000 us. Since the frequency at which servos operate is 50 Hz/20 ms cycle and between 1-2 ms(I found later that you could run the servos at 0.7 ms and slightly above 2 ms also) . <br><br>
+for (i = 0; i < loop_count; ++i) { <br>
+         set(PWM_port,PWM_pin_0); <br>
+         _delay_us(1500); <br>
+         clear(PWM_port,PWM_pin_0); <br>
+         _delay_us(18500); <br>
+         } <br><br>
+This particular code snippet turns only one i.e PA6 pin on/high and sends a voltage for 1.5 ms/1500 us, just after that it turns that pin off/low and stops sending voltage for 18.5 ms/18500 us. <br><br>
+		
+I modified Neil's code by starting the servos at 0.7ms (the extreme left position) and giving increments of 0.4 ms ending at 2.7 ms. This allowed the servos to turn 180 degree in 6 increments in counterclockwise direction, you can further reduce the difference between increments. The moment the loop reaches the last position(2.7 ms). Furthermore, I also added loops so that it goes in similar increments in clockwise direction. Check the illustration above. The only thing I couldn't understand was the function of the loop count in Neil's code, the moment I reduce it, the rotation speeds up and the moment you increase, it slows down. So, it can be said that each delay corresponds to a certain angle. The modified while() loop is written below: <br><br>
+ while (1) {    <br>
+      for (i = 0; i < loop_count; ++i) {  <br>
+         set(PWM_port,PWM_pin_0);  <br>
+         set(PWM_port,PWM_pin_1); <br>
+         _delay_us(700); <br>
+         clear(PWM_port,PWM_pin_0); <br>
+         clear(PWM_port,PWM_pin_1); <br>
+         _delay_us(19300); <br>
+         } <br>
+      for (i = 0; i < loop_count; ++i) { <br>
+         set(PWM_port,PWM_pin_0); <br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(1100);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(18900);<br>
+         }<br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(1500);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(18500);<br>
+         }<br>
+       for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(1900);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(18100);<br>
+         }<br>
+       for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(2300);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(17700);<br>
+         }<br>
+       for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(2700);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(17300);<br>
+         }<br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(2300);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(17700);<br>
+         }<br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(1900);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(18100);<br>
+         }<br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(1500);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(18500);<br>
+         }<br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(1100);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(18900);<br>
+         } <br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(700);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(19300);<br>
+         }  <br>
+      }<br><br>   
+			Next, I further modified the C code a little bit to remove the increments. In the previous code, I had increments of 4ms starting from 7 ms up untill 27 ms. In this particular code, the servos start from 7 ms, rotate 180 degree clockwise(27 ms) and then rotate 180 degree counterclockwise(7 ms)(illustration 7 and 8 above). The code is as follows:<br><br>
+			 while (1) {  <br>
+      for (i = 0; i < loop_count; ++i) {  <br>
+         set(PWM_port,PWM_pin_0);  <br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(700);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(19300);<br>
+         }<br>
+       for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(2700);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(17300);<br>
+         }<br>
+      for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         set(PWM_port,PWM_pin_1);<br>
+         _delay_us(700);<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         clear(PWM_port,PWM_pin_1);<br>
+         _delay_us(19300);<br>
+         }  <br>
+      }<br><br>
+			
+	</p>
+<h2>Output device with sensors</h2>
+		  <p><strong>Adding a sensor and controlling servo through it via Arduino IDE</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/IMG_9977.JPG" alt="">
+		    <div class="slider__caption">The setup for reading the serial communication on Arduino IDE</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_17.jpg" alt="">
+		    <div class="slider__caption">The arduino code with sensor values being displayed </div>
+    </div>
+	  <div class="slider__item">
+     <iframe width="910" height="512" src="https://www.youtube.com/embed/97h2TIDFJvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		   <div class="slider__caption">The servo motor stops when LDR sensor doesn't received light. Though the motor completes one full rotation before coming to a stop</div>
+    </div>
+	  <div class="slider__item">
+      <iframe width="910" height="480" src="https://www.youtube.com/embed/4FmsA1JyJNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		   <div class="slider__caption">Serial read using arduino on Arduino IDE</div>
+    </div> 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify">The sensors are of two types, <i><a href="https://www.codrey.com/electronics/different-types-of-sensors/" target="_blank">analog and digital sensors</a></i> , analog sensors produce continuous values and digital ones produce discrete values i.e on(1) and off(0).
+Now, I wanted to drive the servos using an sensor. Since the board was modular in nature, I could use on of the 3 pins I previously used to drive the Servos motors. I attached my <i><a href="https://www.kitronik.co.uk/blog/how-an-ldr-light-dependent-resistor-works/" target="_blank">LDR sensor</a></i> (An LDR is a component that has a (variable) resistance that changes with the light intensity that falls upon it. This allows them to be used in light sensing circuits.) and made some changes in the Arduino code to drive it. I had previously noted down the values of LDR and I saw that there are only two values, hence you can create a if() loop that will help in running a for() loop rotating the servo when it receives light and stopping the servo when it doesn't receives light. <br><br>
+
+void loop() { <br>
+  sensorValue = analogRead(analogInPin); <br>
+ if(sensorValue < 50)<br>
+ {
+    for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees <br>
+    myservo1.write(pos);              // tell servo to go to position in variable 'pos'<br>
+    SoftwareServo::refresh();<br>
+    mySerial.print("sensor value : ");<br>
+    mySerial.println(sensorValue);<br>
+    delay(20);                       // waits 20ms for the servo to reach the position<br>
+  }<br>
+ }<br>
+ else<br>
+ {<br>
+   {<br>
+    myservo1.write(0);             <br>
+    SoftwareServo::refresh();        // this keeps the servos updated<br>
+    mySerial.print("sensor value : ");<br>
+    mySerial.println(sensorValue);<br>
+    delay(20);                       // waits 20ms for the servo to reach the position<br>
+  }<br>
+   }<br><br>
+
+
+<strong>Serial Read from ATtiny 44</strong>: I tried using the FTDI cable to read the serial communication from ATtiny44 but I kept on failing due to some unknown reasons. I had to find another way to read the serial communication. Since Arduino has dedicated RX/TX pins and I can define my own RX/TX pins using software serial in ArduinoIDE. I defined pins PA1 for Rx and PA0 for Tx, though you will only need Tx to see what is going on in input sensor data. It also helps in debugging and creating if() statements. Next up, I uploaded the code using Arduino IDE to my board and uploaded a blank sketch to Arduino. Connect the Tx pin on your board to Arduino board. and open serial monitor with correct baud rate in Arduino's window. You will see the sensor values. <br><br>
+
+#define Rx PA1 <br>
+#define Tx PA0 <br>
+SoftwareSerial mySerial(PA1, PA0);<br><br>	 
+			
+	
+	
+	</p>
+		  <p><strong>Sensors and servo programmed via Embedded C</strong></p>
+	 <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_18.jpg" alt="">
+		    <div class="slider__caption">The C program in Arduino IDE</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 12/Screenshots/IMG_9964.JPG" alt="">
+		    <div class="slider__caption">PIR sensor along with servo motor</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 12/Screenshots/Screenshot_18a.jpg" alt="">
+		    <div class="slider__caption">Successfully uploadin the program to the board</div>
+    </div>
+	  
+	  <div class="slider__item">
+<iframe width="910" height="512" src="https://www.youtube.com/embed/_EN9thQHVZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		   <div class="slider__caption">The servo motor rotates when the PIR sensor senses any motion and it stops when it doesn't. Though there is a slight delay. </div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+			 One of the last things that I wanted to try so as to slowly increase my grasp on Embedded C was modifiying Neil's code to sense using Passive Infrared Sensor(used as motion detectors) and run a servo motor. I took individual codes of PIR sensor and servo motor, combined them, made slight changes and added an if() statement. Since PIR sensor has only two values and is a discrete sensor i.e when it senses motion and when it doesn't senses motion. I only had to add an if() statement where it checks if there is any motion detected then rotate the servo motor 180 degrees, else if its not sensing any motion the servo is at rest. The following code defines the pins and ports for the designated functions:<br><br>
+
+#define serial_port PORTA <br>
+#define serial_direction DDRA <br>
+#define serial_pin_out (1 << PA0) // defining TX pin to read the sensor data<br>
+#define out_pins PINA<br>
+#define out_pin (1 << PA7) // connect the PIR sensor here<br>
+#define PWM_port PORTA<br>
+#define PWM_direction DDRA<br>
+#define PWM_pin_0 (1 << PA6) //connect the Servo motor here<br><br>
+
+The main loop with if() statement is as follows:<br>
+
+while (1) { <br>
+      //<br>
+      if ((out_pins & out_pin) == 0) //checks if the there is any motion, 0 is no motion <br>
+         {<br>
+          for (i = 0; i < loop_count; ++i) {<br>
+         set(PWM_port,PWM_pin_0);<br>
+         _delay_us(1500); // this keeps the motor in the midway position at rest<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         _delay_us(18500);<br>
+         }<br>
+         }<br>
+        else <br>
+        { <br>
+        for (i = 0; i < loop_count; ++i) { <br>
+         set(PWM_port,PWM_pin_0);<br>
+         _delay_us(700);    // this take the motor to the extreme left<br>
+         clear(PWM_port,PWM_pin_0);<br>
+         _delay_us(19300);<br>
+         }<br>
+       for (i = 0; i < loop_count; ++i) { <br>
+         set(PWM_port,PWM_pin_0);<br>
+         _delay_us(2700);   // this take the motor to the extreme right <br>
+         clear(PWM_port,PWM_pin_0);<br>
+         _delay_us(17300);<br>
+         }<br>
+     }<br>
+   }<br>
+}<br>
+<br><br>
+			  Download all the codes for this week, here. <br><br>
+			  1. <i><a href="img/Week 12/Step_board_with_LDR/Step_board_with_LDR.ino" download>LDR with servo</a></i> <br>
+			  2. <i><a href="img/Week 12/Servo_motor_180_degree.ino/Servo_motor_180_degree.ino.ino" download>Servo motor rotating 180 degree</a></i> <br>
+			  3. <i><a href="img/Week 12/Servo motor_software servo/Servo motor_software servo.ino" download>Servo motor</a></i> <br>
+			  4. <i><a href="img/Week 12/Software_servo_6_increments.ino/Software_servo_6_increments.ino.ino" download>Servo motor six increments</a></i> <br>
+			  5. <i><a href="img/Week 12/Step_board_with_PIR_in_C/Step_board_with_PIR_in_C.ino" download>PIR with servo</a></i> <br><br>
+			  
+			  Download the design files for this week, here <br><br>
+			  1. <i><a href="img/Week 12/outline.png" download>Outline</a></i> <br>
+			  2. <i><a href="img/Week 12/traces.png" download>Traces</a></i> <br>
+    </div>
+  </div>
+</div>
+		 </div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		ALL PROJECTS WERE CREATED UNDER CREATIVE COMMONS LICENSE<br/>
+		CREATED AT VIGYAN ASHRAM, PUNE UNDER FAB ACADEMY
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/myeqlr.js"></script>
+</body>
+</html>

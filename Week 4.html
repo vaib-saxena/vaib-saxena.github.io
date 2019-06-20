@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Week 4-Vaibhav Saxena</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Google Fonts -->   
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		  <li> <a href="index.html"><strong>Home</strong></a> </li>
+		  <li> <a href="Final Project.html"><strong>Final Project</strong></a> </li>
+		  <li> <a <a><strong>Weekly Projects</strong></a></a>
+	         <ul>
+		        <li> <a href="Week 1.html"><strong>Principles and Practices</strong></a> </li>
+	            <li> <a href="Week 2.html"><strong>Project Management</strong></a> </li>
+				<li> <a href="Week 3.html"><strong>Computer-aided Design</strong></a> </li>
+			    <li> <a href="Week 4.html"><strong>Computer-controlled Cutting</strong></a> </li>
+				<li> <a href="Week 5.html"><strong>Electronics Production</strong></a> </li>
+				<li> <a href="Week 6.html"><strong>3D Scanning and Printing</strong></a> </li>
+				<li> <a href="Week 7.html"><strong>Electronics Design</strong></a> </li>
+				<li> <a href="Week 8.html"><strong>Computer-controlled Machining</strong></a> </li>
+				<li> <a href="Week 9.html"><strong>Embedded Programming</strong></a> </li>
+				<li> <a href="Week 10.html"><strong>Molding and Casting</strong></a> </li>
+				<li> <a href="Week 11.html"><strong>Input Devices</strong></a> </li>
+				<li> <a href="Week 12.html"><strong>Output Devices</strong></a> </li>
+				<li> <a href="Week 13.html"><strong>Applications and Implications</strong></a> </li>
+				<li> <a href="Week 14.html"><strong>Networking and Communications</strong></a> </li>
+				<li> <a href="Week 15.html"><strong>Mechanical Design</strong></a> </li>
+				<li> <a href="Week 16.html"><strong>Interface and Application Programming</strong></a> </li>
+				<li> <a href="Week 17.html"><strong>Machine Design</strong></a> </li>
+				<li> <a href="Week 18.html"><strong>Wildcard Week</strong></a> </li>
+				<li> <a href="Week 19.html"><strong>Invention, intellectual property, Income</strong></a> </li>
+				<li> <a href="Week 20.html"><strong>Project Development</strong></a> </li>	
+			  </ul>
+	        </li>
+		  <li> <a href="contact.html"><strong>Contact</strong></a> </li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <h1 class="brand-heading">Week 4</h1>
+			  <p class="intro-text"><strong> Computer-Controlled Cutting </strong></p>
+			  <a href="#single-project" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <div class="col-lg-10 col-lg-offset-1">
+		 <h2>The week with "problem of plenty"</h2>
+	    <p class="text-justify"><font color="grey"><i>
+			<b>1. Laser and Vinyl cutter both are fast and would would easily make a designer think more and do more in a week's span. Hence, it gives lot of room for experimentation.<br><br>
+			2. Miscalibration is truely a nightmare especially when it happens to a laser-cutting machine. A bad calibration results in lot of charring and ends up . <br><br>
+			3. The neglected one, "a vinyl cutter" would leave you amazed if you get the design right. PS: you can put in anything else too instead of a vinyl sheet, the machine isn't intelligent enough to detect it. </i></font><br><br></b>	
+		</p>
+		  <h2>Laser Cutting</h2>
+	    <p><strong>Brief Overview</strong></p>
+	    <p class="text-justify">
+				I had some experience with Laser cutting before, while designing my 3D Printer at Fab Lab CEPT. At Vigyan Ashram, Pune we are using SIL Laser(CO2 las in a glass tube). On one hand it is a very important tool in the lab but a special importance has to be placed on safety above everything else. A laser cutter has its own limitations, while it can cut smoothly through MDF, Acrylic and Cardboard it shouldn't be used for materials such as metal as it can bounce the laser back. One of the important instructions we were given was to use laser cutter only in the presence of Lab Instructors. For this week, I used Laser Cutter on three different occasions, firstly to calculate the kerf for acrylic, secondly to cut a living hinge and lastly a waffle structure for press fit construction.</p><br>
+		  <p><i>Things to remember</i><br></p>
+		  <p class="text-justify">
+		  a. Check whether the material to be cut is straight or not, from my personal experience, MDF and acrylic sheets are usually bent. This can result in varying level of cutting and inaccurate results.<br><br>
+		  b. Check how many files the laser cutter can store in its memory and keep removing the ones that are not required.<br><br>
+		  c. Do not leave the laser cutter un-attended while in use.<br><br>
+		  d. Wait for a minute after the laser cutting is finished. The exhaust takes a while to remove all the fumes.
+		</p>
+		  <p><strong> Kerf Calculation for Acrylic(Group Assignment)</strong></p>
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 4/Screenshot_.jpg" alt="">
+      <div class="slider__caption">SIL Laser used at our Fab Lab in Vigyan Ashram, Pune, India. Photo Credits: SIL Laser <a href="#0"></a> </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9025.jpg" alt="">
+      <div class="slider__caption">One of the key steps is to have a certain distance between the bed and the laser. It had been predetermined by our lab instructors. </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9027.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_1.jpg" alt="">
+      <div class="slider__caption">I made the base file to be laser cut on Rhinoceros 3D software</div>
+    </div>
+	<div class="slider__item">
+      <iframe width="1108" height="623" src="https://www.youtube.com/embed/EGeXFER1lpI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+	  <div class="slider__item">
+      <iframe width="1108" height="623" src="https://www.youtube.com/embed/CUAVdgxfoZQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9045.jpg" alt="">
+      <div class="slider__caption">We did our first Kerf test on acrylic and it didn't go accordingly. We wanted to engrave the names but accidently we also cut them through.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9109.jpg" alt="">
+      <div class="slider__caption">The first proper Kerf test on acrylic with constant speed of 10 mm/s and variable power. We also realized that the power of Laser was too low to engrave but also thought that maybe due to paper it was happening</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9110.jpg" alt="">
+      <div class="slider__caption">Kerf calculation with speed 15mm/s and variable speed</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9105.jpg" alt="">
+      <div class="slider__caption">We noticed that it was easy to cut acrylic at 30 power at 10 mm/s and wanted to go a bit lower that that but unfortunately it didn't cut.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/list 1.jpg" alt="">
+      <div class="slider__caption">Results of Kerf Calculation: Speed=10 mm/s and variable speeds</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/list 2.jpg" alt="">
+      <div class="slider__caption">Results of Kerf Calculation: Speed=15 mm/s and variable speeds</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+		   <p class="text-justify">
+			    I partnered with <i><a href="http://fabacademy.org/2019/labs/vigyanashram/students/tushar-kukreja/" target="_blank">Tushar Kukreja</a></i> to explore the kerf of 3 mm acrylic using <i><a href="https://silasers.com/product/laser-engraving-machine/" target="_blank">SIL Laser</a></i> at various settings. One of the main aims of this exercise was to calculate the amount of material lost during the laser cutting. We took a series of steps to calculate the kerf (defined as the width of material that is removed by a cutting process). We took the following steps to calculate kerf. It is described as follows:<br><br>
+			   a. Designed on <i><a href="https://www.rhino3d.com/" target="_blank">Rhinoceros 3D</a></i>: Made squares of fixed size 30 mm x 30 mm with corresponding speed and power labled on them.<br><br>
+			   b. Commands to machine by <i><a href="https://www.rhino3d.com/" target="_blank">RDWorks</a></i>: Made different layers for scanning and cutting. Mentioned command for power and speed for every square.<br><br>
+		       c. Laser Cutter: Standardized the distance between the acrylic sheet and laser tip(z axis distance), origin and frame to cut the pieces.<br><br>
+			   d. Measured Kerf: The length of the sides of the squares ws measured using Vernier scale.<br><br>
+				<p><i>Conclusion</i></p>
+				<p class="text-justify">
+				a. The minimum Kerf keeping speed at 10mm/sec is at 30% power and at 15mm/sec is at 65% power for acrylic.Thus, characterizing the laser cutter.<br><br>
+				b. Applying this data will will save power and cut acrylic precisely.<br><br>
+				c. Minimum Kerf data will be useful for press-fit designs, adjusting Kerf values in slot thickness.<br><br>
+				</p>
+		  <p><strong>Living Hinge(Parametric Hinge)</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9087.jpg" alt="">
+      <div class="slider__caption">I started with a predefined pattern of a living hinge on a 2 mm MDF by Kofactor Lab to see how it fares to bending.</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9088.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9091.jpg" alt="">
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9093.jpg" alt="">
+      <div class="slider__caption">The results were pretty good displaying bending in two directions</div>
+    </div>
+	  
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify"> After looking at various examples of living hinge or lattice hinge. I wanted to explore and create my own patterns for pre defined bending. Before that, I took a predefined pattern created by <em><a href="http://lab.kofaktor.hr/en/portfolio/super-flexible-laser-cut-plywood/" target="_blank">Kofactor Lab</a></em> and laser cut it to see how it bends. I took a power setting of 60W and 10 mm/s. I personally liked how density, length of cuts can have a major effect on the torsion of the material. The predefined custom cut pattern created the effect of a rubber sheet and was bending in both sides behaving as singly curved and doubly curved surface.<br><br>
+	
+		Download the file <i><a href="img/Week 4/Hinges/super flexible playwood.dxf" download>here</a></i>
+	</p>
+	<br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	<div class="slider__item">
+      <img src="img/Week 4/New hinge/IMG_9265a.jpg" alt="">
+      <div class="slider__caption">New living hinge pattern developed based on tiling geometry</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/New hinge/Screenshot_100.jpg" alt="">
+      <div class="slider__caption">The base tiling pattern</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/New hinge/IMG_9266a.jpg" alt="">
+      <div class="slider__caption">Bending test in one direction</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/New hinge/IMG_9267a.jpg" alt="">
+      <div class="slider__caption">Bending to an extreme limit</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/New hinge/IMG_9269a.jpg" alt="">
+      <div class="slider__caption">Twisting in two directions</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/New hinge/IMG_9270a.jpg" alt="">
+      <div class="slider__caption">Twisting in</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/New hinge/IMG_9271.JPG" alt="">
+      <div class="slider__caption">Twisting in two directions</div>
+    </div>
+	</div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify">
+			    After laser-cutting a pre-designed living hinge, I decided to evolve it and create my own living hinge based on similar  lines(one that could be bent and twisted in multiple directions). I have been obssesed with geometrical tiles for a long time and wanted to use a one of them consisting of parallelogram and square. Unlike the previous living hinge that used only one geometry getting reapeated, this tiling uses two geometries getting repeated again and again. These living hinges can be further evolved with some level of variations in geometry and lines. Also, one can observe as compared to the previous lasser cutting that the cuts are much better in terms of precision. This is a result because of the calibration of the laser. <br><br>
+	
+		Download the file <i><a href="img/Week 4/Hinges/Lattice hinge patterns.3dm" download>here</a></i>
+			</p>
+	<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9117.jpg" alt="">
+      <div class="slider__caption">Parametric predefined bending</div>
+    </div>
+     <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9082.jpg" alt="">
+      <div class="slider__caption">Experimentation with predefined bending using curvature lines. Important parameter being the length of the cuts</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9086.jpg" alt="">
+      <div class="slider__caption">The laser settings were again creating some issues and a lot of charring was happening and it didn't cut through properly</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9101.jpg" alt="">
+      <div class="slider__caption">I finally got successful in cutting a part of my final living hinge and checked whether it was bending accordingly</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/bending.gif" alt="">
+      <div class="slider__caption">Creating a script in grasshopper helps in managing the distance between the lines, the intensity, the rotation and other factors</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9113.jpg" alt="">
+      <div class="slider__caption">The start of the final laser cut for parametric bending</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9115.jpg" alt="">
+      <div class="slider__caption">The finished product</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9116.jpg" alt="">
+      <div class="slider__caption">The lines came out well except for charring, attributed to calibration of the laser</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9118.jpg" alt="">
+      <div class="slider__caption">Predefined bending</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9120.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9121.jpg" alt="">
+    </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+			<p class="text-justify">
+			For my custom shape, I used straight lattice in the form of a whirlpool and started with cutting a part of it at a setting of 50W and 24 mm/s. The laser wasn't calinbrated and the pattern didn't cut properly, hence I had to go back to my previous tried and tested setting of 60W Power and 10 mm/s speed. I had to force a bit to take the pattern out. Since it was a whirlpool and it would be bent in a certain way when the pressure is applied to designated places, it was doing so and I was satisfied with it. I also did certain changes for the final cut. I made the cuts longer and calibrated the laser cut machine(by local instructor Suhas Labade). I also found out that closer the lines, the more the elasticity. One important aspect here to pay attention to the fact that the space left between lines has to be in an alternative zig-zag manner.<br><br>
+	
+		Download the file <i><a href="img/Week 4/Hinges/Parametric living hinge.3dm" download>here</a></i>
+
+</p>
+	      <p class="text-justify">The following links helped me in understanding bending, curvature and torsion<br>
+	      <i><a href="https://www.deferredprocrastination.co.uk/blog/2012/minimum-bend-radius/" target="_blank">a. Bending Radius</a></i><br>
+		  <i><a href="http://brickisland.net/cs177/?p=144" target="_blank">b. Understanding Curvature</a></i><br></p>
+		  <p><strong>Press fit construction</strong></p>
+	 <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9576.JPG" alt="">
+      <div class="slider__caption">Press fit construction using two different material, acrylic and MDF</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 4/kerf.gif" alt="">
+      <div class="slider__caption">A custom script made in Grasshopper for two different materials, including the Kerf for each material</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_112.jpg" alt="">
+      <div class="slider__caption">Before fabrication, a comb test helps in determining the kerf and best fit</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_1028.jpg" alt="">
+      <div class="slider__caption">The Grasshopper script generates fabrication ready 2D curves that can be exported to RDWorks for laser cutting</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_001.jpg" alt="">
+      <div class="slider__caption">Kerf at the point of fitting</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_1020.jpg" alt="">
+      <div class="slider__caption">Applying the script on a Gyroid, a minimal surface but with fail </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9174.jpg" alt="">
+      <div class="slider__caption">Fabricating MDF and Acrylic parts to check which fits the best</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9578.JPG" alt="">
+      <div class="slider__caption">Assembled piece </div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9580.JPG" alt="">
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9581.JPG" alt="">
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9583.JPG" alt="">
+    </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+				I wanted to create a waffle/rib structure on a <i><a href="https://structuredesign.wordpress.com/my-projects/double-curvature/" target="_blank">doubly curved surface</a></i> using Grasshopper(again) for the press fit assignment. This might seem a very common thing around, but most of the scripts available online didn't include the kerf. Also, I wanted to make the waffle/rib structure using two materials i.e. MDF and acrylic, hence I had to use comb test to check which settings fit in properly. MDF is 2 mm and Acrylic is 2.58 mm thick respectively. While performing comb test, on both MDF and acrylic, I took increments of 0.08 mm based on kerf. The comb settings that allowed for perfect snuck fit are:<br> 2.26 mm for the acrylic on MDF, and <br>1.92 mm for MDF on acrylic.<br><br>   I further went ahead and tried to apply the script on a gyroid surface, a minimal surface as mesh in Grasshopper, but since it was a mesh and my script only took inputs as "surface" it failed to generate a ribbed structure. But then I decided to create some changes in the mesh but still there were some issues with the script and it failed to create the final product intended. I also realized that having so many parameters in a script/code helps in more control over changes to be done in the future. I made the script, fabrication ready, hence the workflow was faster. <br><br>
+	
+		Download the Grasshopper code <i><a href="img/Week 4/Folding/Waffling mesh.gh" download>here</a></i> and 3d file <i><a href="https://drive.google.com/file/d/1Pcn5DSNKEWvDuImWkyqKBwVEEF7JWjcA/view?usp=sharing" download>here</a></i>
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="second-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <h2>Vinyl Cutter</h2>
+	  <div class="col-lg-10 col-lg-offset-1">
+	    <p><strong>Brief Overview: </strong></p>
+	    <p class="text-justify">
+				I had never tried Vinyl Cutting but had already heard a lot about it and as mentioned by Neil, it is the most underrated machine in the lab and so I wanted to challenge myself in this assignment. I started with one vinyl cut and enjoyed it so much that I made two more vinyl cuts. We used, Roland CAMM-1, which was slightly on the older side and clear instructions were given to us before using it. It was connected a lab computer using Linux, hence we had to generate our final png files and transfer it to that computer. I enjoyed this assignment more than any other.
+		  <p><strong>Steps</strong></p>
+		  <br>
+	<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9138.jpg" alt="">
+      <div class="slider__caption">The final product</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 4/waves.gif" alt="">
+      <div class="slider__caption">Using grasshoper to create a wave pattern</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/roland.jpg" alt="">
+      <div class="slider__caption">Roland CAMM-1 used in our lab</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_4.jpg" alt="">
+      <div class="slider__caption">Exporting the file in .png format using Adobe Illustrator</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/vaib1.png" alt="">
+      <div class="slider__caption">Using the Linux terminal window to setup the cutting process</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/vaib2.png" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/vaib3.png" alt="">
+      <div class="slider__caption">The final window before cutting displays the dimentions and other parameters to be customized</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 4/Screenshots/vaib5.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9144.jpg" alt="">
+      <div class="slider__caption">Opening the lever to load the vinyl and closing to start cutting it</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9155.jpg" alt="">
+      <div class="slider__caption">Force and Speed settings</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/iphone/IMG_2025.jpg" alt="">
+      <div class="slider__caption">Slowing peeling the vinyl off the laptop (clean the laptop before sticking the vinyl.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/iphone/IMG_2026.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/iphone/IMG-2033.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/iphone/IMG-2034.jpg" alt="">
+    </div>
+	  
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		  <p class="text-justify">
+			  I started with a straightforward and popular wave pattern by creating a script in Grasshopper, a plugin for rhinoceros. When I started making it, I was challenged by my local instructors that it would be tough for me to stick it on the laptop. The vinyl cutting machine also needed some hacking to make it work. The sensors weren't initially detecting the vinyl paper, and the machine had to be turned off and then back on. Steps followed to generate and initiate cutting: <br><br>
+		  
+			  a. I measured the size of my laptop and how I wanted to place the vinyl over it. After creating my graphic in Rhinoceros, I exported the file as .ai and opened in Adobe Illustrator.<br><br>
+			  b. In abode Illustrator, I exported the file as 600 dpi .png image.<br><br>
+			  c. Next up, I opened Terminal on the Linux PC and typed "sudo fab". It asked for an input and output format.<br><br>
+			  d. After uploading the .png file and creating the tool path, I sent it to the Vinyl Cutter. I set the speed to 1cm/s and force to 120gf.<br><br>
+			  e. The cutting took about 15 minutes and then I followed the process below to stick it.<br><br>
+		
+		      I used a very different technique by "removing the vinyl completely" off the backing paper and then sticking it directly on the laptop and then slowly peeling it off, using X-ACTO knife. The whole process involved lot of patience and slowly peeling it off. I really got the knack of it and was amazed by the final product.<br><br>
+			Download the grasshopper file <i><a href="img/Week 4/Vinyl Cutting/Waves.gh">here</a></i> and the png file <i><a href="img/Week 4/Vinyl Cutting/final.png">here</a></i><br>
+			
+			</p> 
+		
+		
+<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	 
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/Screenshot_5.jpg" alt="">
+      <div class="slider__caption">Creating another graphic for vinyl cutting in Rhinoceros</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Screenshots/vaib6.png" alt="">
+      <div class="slider__caption">One issue that still remains is that the toolpath isn't very smooth</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9167.jpg" alt="">
+      <div class="slider__caption">I stuck the graphic "This isn't Helvetica" on the front page of the diary. PS: nt was too small</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 4/Canon/IMG_9170.jpg" alt="">
+      <div class="slider__caption">The QR code was a failed experiment since it couldn't be read.</div>
+    </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 	
+	<p class="text-justify">
+	 I then moved on to make another vinyl-cut and thought of a QR code(to see how small the Vinyl Cutter can cut) and a quote "This isn't Helvetica" (a kind of oxymoron, since "This is Helvetica" is written in Arial). Again I was surprised how small the Vinyl cutter can cut but the issue from my side was that the barcode didn't stick properly and hence I couldn't scan it.<br><br>
+		Download the file <i><a href="img/Week 4/Vinyl Cutting/helvetica.png">here</a></i>
+
+	</p>
+		
+		 </div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		ALL PROJECTS WERE CREATED UNDER CREATIVE COMMONS LICENSE<br/>
+		CREATED AT VIGYAN ASHRAM, PUNE UNDER FAB ACADEMY
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/myeqlr.js"></script>
+</body>
+</html>

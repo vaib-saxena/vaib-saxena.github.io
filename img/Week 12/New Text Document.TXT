@@ -1,0 +1,11 @@
+http://fab.cba.mit.edu/classes/4.140/EECS/people/elliott/weeks/8.html
+https://fabacademy.org/archives/2014/students/delosrios.jose/tareas/inputdevices.html
+http://fab.cba.mit.edu/classes/863.17/Harvard/people/jiabaoli/11.html
+http://archive.fabacademy.org/archives/2017/fablabsingapore/students/172/exercise13.html
+
+I again started with a basic understanding of most of the boards that Neil showed us in the lecture.
+The common things in these boards was that they had a 2x3  SPI header, a 6 pin FTDI header, a Attiny 44/45, a ppull up resistor
+and a capacitor to clear the noise/avoid fluctuations. 
+
+analog comparator
+multiplexer

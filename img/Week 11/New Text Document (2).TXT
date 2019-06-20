@@ -1,0 +1,17 @@
+A voltage regulator is a system designed to automatically maintain a constant voltage level.
+It has 3 pins, one takes the input voltage from the power, another takes the ground pint of the power and the output goes to the VCC of 
+the IC. 
+Impedance is the effective resistance ofan electic circuit or component. 
+
+To change the speed of the motor it has to have been connected to PWM pin. 
+Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means.
+
+Solenoid is the generic term for a coil of wire used as an electromagnet. It also refers to any device that converts electrical energy to mechanical energy using a solenoid. The device creates a magnetic field from electric current and uses the magnetic field to create linear motion. Springs can further be used to retract their motion. Solenoids and relays are closely related. or one may say they are the same, the relays are basically switches that can be turned on and off by using a solenoid.All the linear motion together can be used to create other types of motion. Imagine 5 solenoids in radial direction kept together.  
+
+Power input, regulator,(can go to vcc), then resistor and capacitor,
+
+An H bridge is used to drive the DC motor in both the directions. if you only want to drive the motor in one direction then use a MOSFET. 
+
+Servo motors run on regulated power, while DC motors run on unregulated power.
+Servos have a closed loop feedback system that helps in telling the exact position. 
+Servos can be AC or DC. Speed in DC servo is directly proportional to the voltage applied.

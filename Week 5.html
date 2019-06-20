@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Week 5-Vaibhav Saxena</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Google Fonts -->   
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		  <li> <a href="index.html"><strong>Home</strong></a> </li>
+		  <li> <a href="Final Project.html"><strong>Final Project</strong></a> </li>
+		  <li> <a <a><strong>Weekly Projects</strong></a></a>
+	         <ul>
+		        <li> <a href="Week 1.html"><strong>Principles and Practices</strong></a> </li>
+	            <li> <a href="Week 2.html"><strong>Project Management</strong></a> </li>
+				<li> <a href="Week 3.html"><strong>Computer-aided Design</strong></a> </li>
+			    <li> <a href="Week 4.html"><strong>Computer-controlled Cutting</strong></a> </li>
+				<li> <a href="Week 5.html"><strong>Electronics Production</strong></a> </li>
+				<li> <a href="Week 6.html"><strong>3D Scanning and Printing</strong></a> </li>
+				<li> <a href="Week 7.html"><strong>Electronics Design</strong></a> </li>
+				<li> <a href="Week 8.html"><strong>Computer-controlled Machining</strong></a> </li>
+				<li> <a href="Week 9.html"><strong>Embedded Programming</strong></a> </li>
+				<li> <a href="Week 10.html"><strong>Molding and Casting</strong></a> </li>
+				<li> <a href="Week 11.html"><strong>Input Devices</strong></a> </li>
+				<li> <a href="Week 12.html"><strong>Output Devices</strong></a> </li>
+				<li> <a href="Week 13.html"><strong>Applications and Implications</strong></a> </li>
+				<li> <a href="Week 14.html"><strong>Networking and Communications</strong></a> </li>
+				<li> <a href="Week 15.html"><strong>Mechanical Design</strong></a> </li>
+				<li> <a href="Week 16.html"><strong>Interface and Application Programming</strong></a> </li>
+				<li> <a href="Week 17.html"><strong>Machine Design</strong></a> </li>
+				<li> <a href="Week 18.html"><strong>Wildcard Week</strong></a> </li>
+				<li> <a href="Week 19.html"><strong>Invention, intellectual property, Income</strong></a> </li>
+				<li> <a href="Week 20.html"><strong>Project Development</strong></a> </li>	
+			  </ul>
+	        </li>
+		  <li> <a href="contact.html"><strong>Contact</strong></a> </li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <h1 class="brand-heading">Week 5</h1>
+			  <p class="intro-text"><strong> Electronics Production </strong></p>
+			  <a href="#single-project" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <div class="col-lg-10 col-lg-offset-1">
+		  </p><h2>The doubtful week, production before design ?!?!</h2>
+	    <p class="text-justify"><font color="grey"><i>
+			<b>1. I would like to think this week by drawing an analogy: giving life to a new board that can do tons of things. Parent is your programmer and offspring is your new FabISP. <br><br>
+			2. Once you get a knack for soldering its really like "zen" (atleast it was for me after doing two PCB boards). <br><br>
+			3. The process to programme the board is a cumbersome process and involves lot of downloading. </i></font><br><br></b>	
+		</p>
+		<h2>Milling FabISP(failed attempt)</h2>
+	    <p><strong>Brief Overview</strong></p>
+	    <p class="text-justify">
+				I have been looking forward to this week to start improving on my electronics section but also had this question when I started this week that why not design the board before going ahead with fabrication/milling(still have this question actually). But as it appeared I have to start with fabrication of a PCB before actually designing one. I used <i><a href="http://fab.cba.mit.edu/content/archive/projects/fabisp/" target="_blank">David's</a></i> board since it was not documented properly and I thought of documenting it as good as possible. David's board also had lot of issues that I felt were addressed in later boards. It lacked LED and hence wasn't able to display whether the board was connected to the computer or not. Another drawback that I felt was connecting and disconnecting the solder jumpers once the programming is done, somehow I felt this made the process a bit cumbersome. My first board got programmed but didn't get detected even after several attempts, hence I decided to go with Brian's board(the second board got successful).
+			</p>
+		<p><strong>Group Assignment(including Line test)</strong></p>
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/GA/SRM 20.jpg" alt="">
+		<div class="slider__caption">We are using SRM 20 for PCB milling at out lab</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/GA/IMG_9630.JPG" alt="">
+		<div class="slider__caption">The two milling bits used for PCB milling. The above one is 1/64 inch(0.396875 mm) is used for milling traces and the one is 1/32 inch(0.79375 mm) is used for cutting the PCB board. </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/GA/srm 2.jpg" alt="">
+		<div class="slider__caption">The interactive dialog box to operate SRM 20</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/GA/set.jpg" alt="">
+		<div class="slider__caption">Using Allen key to set the milling bit</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/GA/fs6-min.jpg"lt="">
+		<div class="slider__caption">Using gravity to fix Z origin</div>
+    </div>
+	  <div class="slider__item">
+      <img src='img/Week 5/Images/GA/13.jpg'lt="">
+		<div class="slider__caption">Adding .rml file to start milling</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/line/Screenshot_13.jpg" alt="">
+		<div class="slider__caption">Generated the .rml file in Fabmodules for Line test </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/line/Screenshot_14.jpg" alt="">
+		<div class="slider__caption">There was an issue with generating the outlines, I couldn't see a path at the bottom, it didn't show any blue line(toolpath) </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9256.jpg" alt="">
+    </div>
+	<div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9260.jpg" alt="">      
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9264.jpg" alt="">
+		  <div class="slider__caption">The bottom line didn't cut properly</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+	<p class="text-justify">
+		Although there are two PCB milling machines at our Fab Lab <i><a href="https://www.rolanddga.com/support/products/milling/modela-mdx-20-3d-milling-machine" target="_blank">Roland Modela MDX-20</a></i> and <i><a href="https://www.rolanddga.com/products/3d/srm-20-small-milling-machine" target="_blank">Roland monoFab SRM 20</a></i>, we preferred the latter one. The technical specifications for the machine can be found out <i><a href="https://www.rolanddga.com/products/3d/srm-20-small-milling-machine/specifications" target="_blank">here</a></i>. To use the machine we followed the following steps:<br><br>
+		1. Levelling the bed and setting the origin: We used <i><a href="http://www.bestpcbs.com/blog/2016/08/whats-the-difference-for-fr1-fr2-fr3-and-fr4-materials/" target="_blank">FR1 board</a></i> for milling. The board is stuck to the bed using a double sided tape. Next we move the machine along X, Y and Z axis using the controls given on my SRM-20's software, to set the origin. <br><br>
+		2. Using the end mills: A word of caution here, 1/64 inch and 1/32 inch end mills are very small and there are good chances that they can break if mishandled or aren't fitted properly. A dry run is always beneficial before actual milling. It involves setting the "Z" above the board level, so that machine will just hover giving you an idea about the actual extent of milling. First we mill the traces using 1/64 inch end mill and then we use 1/32 inch end mill to cut the boundaries of the board in order to remove it.<br><br>
+		3. Using gravity to set the end mill: Try to bring Z as close(5 mm) as possible to the milling board and then losen the collet a little bit and drop the end mill. Then set Z as zero in the dialog box.<br><br>
+		
+		One of the major drawbacks of the machine that we found out is the absence of artificial lighting inside the machine.<br><br>
+			  It is important to do a "line test" (kind of based on similar lines like that of comb test) before actually milling a PCB. So what is a line test, line test is basically used to see how fine a track can be milled by a particular end mill. I used 1/64 inch end mill on a Roland monofab SRM20 to mill a design already available online and <i><a href="http://academy.cba.mit.edu/classes/electronics_production/linetest.png" target="_blank">here</a></i>. The line test has lines of varying thickness starting from 0.02 inch(0.508 mm) down to 0.001 inch(0.0254 mm). Neil showed us a <i><a href="http://academy.cba.mit.edu/classes/electronics_production/0156.jpg" target="_blank">photograph</a></i> of a milled line test and the thinnest one didn't mill properly. In my case, even the thinnest line of 0.001 inch came out clearly and precisely. The only reason I can think of is the difference between the machines. This line test will help us in electronics design as to how thin your trace can be and still be easily milled by the milling machine. 
+			  
+		  </p>
+		  <p><strong>Generating file and milling</strong></p>
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_4.jpg" alt="">
+      <div class="slider__caption">Editing the .brd file in Autodesk Eagle to make few modifications</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_5.jpg" alt="">
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_1.jpg" alt="">
+		<div class="slider__caption">Generating the toolpath for interior traces in fab modules</div>
+    </div>
+	<div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_2.jpg" alt="">      
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_3.jpg" alt="">
+      <div class="slider__caption">Fab Modules to generate external toolpath</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9190.jpg" alt="">
+      <div class="slider__caption">The structure of the V milling bit used in Roland Modela MDX-20</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9191.jpg" alt="">
+      <div class="slider__caption">The failed attempt by Roland Modela MDX-20 using a broken milling bit</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9196.jpg" alt="">
+      <div class="slider__caption">Interior traces in progress using 1/64 inch milling bit on Roland SRM-20</div>
+    </div>
+	  <div class="slider__item">
+      <iframe width="930" height="523" src="https://www.youtube.com/embed/I8IIMJPKKnw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="slider__caption">Video </div>
+    </div>
+	  <div class="slider__item">
+      <iframe width="930" height="523" src="https://www.youtube.com/embed/QiI__Nyuy14?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="slider__caption">Video </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9198.jpg" alt="">
+      <div class="slider__caption">Finished interior traces using 1/64 inch milling bit </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9200.jpg" alt="">
+      <div class="slider__caption">Using 1/32 inch milling bit generates lot of copper dust</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9203.jpg" alt="">
+      <div class="slider__caption">The exterior trace was cut into two on the either side of the trace line</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9209 - Copy.jpg" alt="">
+      <div class="slider__caption">FabISP and Vaibhav didn't come out properly</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+		   <p class="text-justify">
+			   I started with downloading the .brd file of <i><a href="http://fab.cba.mit.edu/content/archive/projects/fabisp/fabisp.brd" target="_blank">David's board</a></i>. I made some modifications to David's design by changing the shape of the PCB to a dog tag and adding my name in <i><a href="https://www.autodesk.com/products/eagle/overview" target="_blank">Autodesk Eagle</a></i>. I then exported the file to .png format. I used fabmodules to generate the .rml file for interior and exterior traces. I used 1/64 inch milling bit for interior and 1/32 for exterior traces. <br><br>
+			   While milling my first PCB, I tried to do it using <i><a href="https://www.rolanddga.com/support/products/milling/modela-mdx-20-3d-milling-machine" target="_blank">Roland Modela MDX-20</a></i> but quickly realized that the bit was broken and immediately aborted PCB milling. There is a difference between the bit structure of Modela MDX-20(V milling bits, it kept on breaking) and SRM 20. One of the disadvantages both these machines have is the bed levelling which kept on breaking the milling bits. I ultimately used <i><a href="https://www.rolanddga.com/products/3d/srm-20-small-milling-machine" target="_blank">Roland monoFab SRM 20</a></i> to mill my PCB on FR-1.<br><br>
+			   Steps to follow before milling:<br>
+			   1. Add a sacrificial layer on the milling bed.<br>
+			   2. Prevent any air bubbles while sticking the PCB. <br>
+			   3. Place the milling bit on the bed using gravity(don't drop it) and place is preferably on a higher level, if the bed is slightly uneven.<br><br>
+			   
+			   Everything looked fine except for the traces of my name "Vaibhav" and "FabISP" that didn't come out properly, since it was too thin for 1/64 inch milling bit. Another issue that I realized was with fab modules while generating .rml file. The interior was perfectly fine but while I was generating .rml file for cutting the PCB it was showing two paths, one outside and one inside the actual trace line. <br>
+			   Also one important thing to note of importance is that the solder jumpers when connected make the FabISP vulnerable to be reprogrammed, only when one of them is disconnected it cannot be reporgrammed, hence after it is programmed SJ1 should be disconnected.
+		  <p><strong>Soldering</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9211.jpg" alt="">
+      <div class="slider__caption">Step 1</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9215.jpg" alt="">
+      <div class="slider__caption">Step 2</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9224.jpg" alt="">
+      <div class="slider__caption">The two soldering pads are connected before configuring the board </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9218.jpg" alt="">
+      <div class="slider__caption">Tools used for soldering involve tweezers, soldering wire, flux and desol pump</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		<p class="text-justify">
+				The components(BOM) for the FabISP are listed below: <br><br>
+				1. ATtiny 44 x1 (The circle should be identified before soldering the microcontroller)<br>
+				2. Zener Diode 3.3v x2 (the black line denotes positive side)<br>
+				3. Crystal 16 MHz x1 (instead of 12MHz used by David)<br>
+				4. 1000 Ohm Resistor x1 (identified as 1002)<br>
+				5. 1000 Ohm Resistor x1 (identified as 1001)<br>
+				6. 499 Ohm Resistor x1 (identified as 4990)<br>
+				7. 49 Ohm Resistor x2  (identified as 49R9)<br>
+				8. 0 Ohm Resistor x1 (identified as 000)<br>
+				9. 22 PicoFarad Capacitor x2<br>
+				10. 0.1 MicroFarad Capacitor x1<br>
+				11. 10 MicroFarad Capacitor x1<br>
+				12. Mini-B USB Connector x1 <br>
+				13. 6 Pin Header x1<br></p>
+			<p class="text-justify">
+			    Things to do before soldering:<br><br>
+				1. Rub the surface of the freshly milled PCB board with a higher grit sandpaper.<br>
+				2. Clean the tip of soldering iron.<br>
+				3. I heated my soldering iron to 340° C before using it.<br> 
+				4. Apply flux to the trace pads before soldering.<br>
+				5. The technique that worked: I applied very little solder to one of the pads that acted as glue for the component. I then held the component with a tweezer in one hand and soldering iron in another, heated the pad containing solder a bit and placed the component immediately. The component is slightly fixed now and now other pad can be easily soldered.
+			</p>
+		  <p><strong>Programming ISP</strong></p>
+	 <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_7.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_8.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_8a.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_8b.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_9.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_10.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9225.jpg" alt="">
+      <div class="slider__caption">USBasp with FabISP</div>
+	  </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+			  David mentioned to use WinAVR(to install the development tools for AVR microcontrollers) but since it hasn't been maintained for years and isn't good for Windows 10 hence, I went with the following to program FabISP and they are as follows(based on <i><a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/windows_avr.html" target="_blank">Brian's</a></i> documentation). I used USBasp as a programmer to program my FabISP:<br><br>
+			  
+			  1. Download and unzip David's <i><a href="https://fab.cba.mit.edu/content/archive/projects/fabisp/firmware.zip" target="_blank">firmware</a></i> : The firmware already contains a hex file that the FabISP can read <br>
+			  2. Install <i><a href="https://git-scm.com/downloads" target="_blank">Git</a></i> : used to execute commands from a specific folder, on the other hand command prompt could also be used to locate to the specific folder where firmware is located <br>
+			  3. Download and install <i><a href="https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers" target="_blank">Atmel GNU Toolchain</a></i>: a collection of tools/libraries used to create applications for AVR® microcontrollers <br>
+			  4. Download and install <i><a href="https://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/make-3.81.exe" target="_blank">GNU Make</a></i><br>
+			  5. Download and install <i><a href="fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/avrdude-win-64bit.zip" target="_blank">avrdude</a></i><br>
+			  6. Download <i><a href="https://zadig.akeo.ie/" target="_blank">Zadig</a></i> to install drivers for the programmer<br><br>
+			  
+			  After installing all of the above, update the path by going to Start Menu>Control Panel>System. From left pane, choose Advanced System Settings and under Advanced tab go to "Environments Variables" (check the illustration above)<br>
+			  The three values to add are:<br><br>
+
+   			  C:\Program Files\avr8-gnu-toolchain\bin<br>	
+              C:\Program Files (x86)\GnuWin32\bin<br>
+              C:\Program Files\avrdude<br><br>
+			  
+			  Now we will install drivers for the programmer, we will use Zadig(mentioned above) to install the drivers for the programmer.(check the illustration above)<br><br>
+
+			  To check whether everything is installed, open command prompt as administrator and use these commands one after another:<br>
+			  1. make -v and press enter<br>
+			  2. avr-gcc --version and press enter<br>
+			  3. avrdude -c usbasp -p attiny44 and press enter<br>
+			  
+			  If the above commands provide the results as displayed in the illustration above then we are ready to proceed to the next steps.<br><br>
+			  
+		      1. Since I was using USBasp, I had to edit David's Makefile from "avrdude -c usbtiny -p $(DEVICE)" to "avrdude -c usbasp -p $(DEVICE)"<br>
+			  2. Once the above step has been performed, I opened the Git Bash in the David's firmware folder and executed the following programs(in the same order) a) make flash, b) make fuse and c)make program (even though make flash and make fuse didn't do anything as observed)<br>
+			  3. Make program command displayed that the FabISP has been programmed succesfully.<br>
+			  4. Now I had to disconnect the SJ1 jumper above the crystal.<br><br>
+			  
+			  After repeated attempts my computer couldn't detect the USBisp and hence I proceeded with Brian's board.
+			  
+			  
+			
+			  
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="second-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <h2>Milling ISP(successful attempt)</h2>
+	  <div class="col-lg-10 col-lg-offset-1">
+	    <p><strong>Brief Overview: </strong></p>
+	    <p class="text-justify">
+				Since my previous PCB board didn't get detected after several attempts and also I couldn't debugg it, but to finish this week's assignment I wanted create a new PCB board. I also realized that it would be easy to fabricate a new PCB easily.   
+		  <p><strong>Creation</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9253.jpg" alt="">
+      <div class="slider__caption">Working FabISP(finally) </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_11.jpg" alt="">
+		  <div class="slider__caption">$make command executed (upper left corner).It creates a hex file.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_13 (make flash).jpg" alt="">
+		  <div class="slider__caption">$make flash command executed. It wipes the board and erases the target chip, and programs its flash memory with the contents of the .hex file generated in last step. "avrdude done" displayed at the end of the page shows its successfully done</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_14 (make fuses).jpg" alt="">
+		  <div class="slider__caption">$make fuses command executed. This will set up all of the fuses except the one that disables the reset pin. AFter this command execution, remove your FabISP from the programmer and directly insert into the USB port to see if the PC detects it.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_15 (remove fuses).jpg" alt="">
+		  <div class="slider__caption">$make rstdisbl removes/blows the fuses. This will enable it become a programmer and not be reprogrammed. This does the same thing as the make fuses command, but this time it's going to include that reset disable bit as well.This command is executed after your PC has detected FabISP as UsbISP.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9246.jpg" alt="">
+		  <div class="slider__caption">The LED powers up on successful programming</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Canon/Low/IMG_9251.jpg" alt="">
+		<div class="slider__caption">USBisp detected on the laptop</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 5/Images/Screenshot_12.jpg" alt="">
+    </div>
+	  
+	   
+	  
+	  
+	  
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		
+		  <p class="text-justify">
+			  Since my past attempt was not successful at the programming stage, it was kind of easy to quickly mill an new FabISP and solder it. I followed <i><a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html" target="_blank">Brian's PCB</a></i> Board I followed the similar steps as mentioned above to solder the components on freshly milled PCB. I religiously followed the steps mentioned on Brians's page. I personally felt that Brian's board was much more sophisticated in nature. I finished the board in couple of hours and it took 5 minutes to programme and detect it by my computer. The list of components was also less as compared to David's board and is listed below:<br><br>
+			  
+    1x ATtiny45 or ATtiny85<br>
+    2x 1kΩ resistors<br>
+    2x 499Ω resistors<br>
+    2x 49Ω resistors<br>
+    2x 3.3v zener diodes<br>
+    1x red LED<br>
+    1x green LED<br>
+    1x 100nF capacitor<br>
+    1x 2x3 pin header<br><br>
+			  
+			  Download all the files for this week, here. <br><br>
+			  1. <i><a href="img/Week 5/David/fabisp.sch" download>Schematic file</a></i> <br>
+			  2. <i><a href="img/Week 5/David/fabisp.brd" download>Board file</a></i> <br>
+			  3. <i><a href="img/Week 5/David/fabbisp.png" download>Traces</a></i> <br>
+			  4. <i><a href="img/Week 5/David/fabbispdim.png" download>Outline</a></i> <br>
+
+		</p>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		ALL PROJECTS WERE CREATED UNDER CREATIVE COMMONS LICENSE<br/>
+		CREATED AT VIGYAN ASHRAM, PUNE UNDER FAB ACADEMY
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/myeqlr.js"></script>
+</body>
+</html>

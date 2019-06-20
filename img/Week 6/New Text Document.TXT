@@ -1,0 +1,82 @@
+
+TARGETS THIS WEEK: EDIT GCODE AND METAMATERIALS/AUXETICS
+
+https://en.wikipedia.org/wiki/Auxetics - it is the same thing that Hasso Platner did on dezeen 
+https://hpi.de//en/baudisch/projects/metamaterial-mechanisms.html
+https://www.thingiverse.com/thing:2082638
+http://www.piper3dp.com/blogs/from-the-lab-auxetic-smart-structures/
+https://www.thingiverse.com/make:296045
+https://3dprint.com/86919/3d-printing-microstructures/
+
+3D printing benchmarking(group assignment)
+Autodesk Within
+
+https://www.creativemachineslab.com/ (STRONGLY RECOMMEDNDED)
+Meshmixer VoxCAD
+nathan_melenbrinkfor GCODE
+
+metamaterials - a synthetic composite material with a structure such that it exhibits
+ properties not usually found in natural materials, especially a negative refractive index.
+
+https://medcraveonline.com/MSEIJ/MSEIJ-01-00011
+
+https://www.shu.ac.uk/research/specialisms/materials-and-engineering-research-institute/what-we-do/polymers-nanocomposites-and-modelling-research-centre/auxetics-research-group
+
+Optimising prototype timing
+
+weaving - like kagoma weave
+
+Kinematics - INterlocking by nervous system (https://n-e-r-v-o-u-s.com/projects/albums/kinematics-concept/`
+
+CYmatics
+pufferfish
+interlocking (UCL)
+Burning man
+
+There were few things that I wanted to do, use 3d printing to reduce time (since we had only one printer) and 
+also move in the direction of metamaterials to achive certain properties like elasticity and shape morphing by 
+interlocking and weaving.  Again in this I can have a homogeomous structure of a heterogenous structure.
+
+The focus in not only to shape outer structure but also the inner structure.
+
+http://code-collective.cc/gh-weave-knit-knot-1/
+
+Text- THE ONE HOUR 3D Printing CHallenge
+I realized that rathen than going for rounded lines its better to go for strips. Also, the print time is much more
+than what it is shown while the print is given. https://annietzhang.com/3d-printed-textile.
+I took a predefined script but had to change few parameters like that of bed temperature and extruder temperature.
+M190 S100 - is used to set the bed temperature
+M109 S235 - is used to set the extrusion temperature to 235 before continuing
+
+Debugging to start- flipping the curve.
+Setting the temperature like above.
+To change the internal pattern for any closed polygon shell, I used various mathematical functions and created a 
+whole new different script. To check the consistency of the script, a single polyline would have been created at the end.
+
+In the next iteration, I changed the feed rate to 3000 mm/min and saw that the external boundary wasn't very clean and was 
+untidy and on the other hand it was taut as compared to the previous one with one(the circle was sagging)
+
+IN the third iteration, I used demiliter rather than replacing the text, I changed the external web to 1200 mm/min
+and internal web to 6000 mm/min and it failed badly. 
+
+Steps to use Autodesk Recap Photo:
+1. Use your student account to download Autodesk ReCap 2019.(Do check minimum requirements for your PC)
+2. Autodesk Recap Photo has some amazing capabilities and from scanning small objects, it can also scan and 
+create 3D files of a terrain using a drone scanner. 
+3. This is a very useful tutorial as to how to take photos for photogrammetry. https://www.youtube.com/watch?v=D7Torjkfec4
+
+STl. ile only exports the mesh and doesn't give us the texture.
+I later on exported the .obj file as it gave me the options to export the file with textures.
+
+Steps to use Sense 3D scanner(https://www.3dsystems.com/shop/sense):
+1. It can be mounted on a tripod, but since we didn't have it, we went for handhelding.
+2. The software for Sense 3D scanner could be downloaded from https://www.3dsystems.com/shop/support/sense2/downloads
+3. Scan, edit, enhance, share
+4.
+
+Precautions and Limitations:
+1. Do not scan a shiny, transparent surface or object.
+2. It needs a USB wired connection, hence making it immobile.
+3. 
+
+

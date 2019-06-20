@@ -1,0 +1,21 @@
+
+http://cba.mit.edu/events/03.11.ASE/docs/Penrose.pdf
+
+To design a closed loop system for self assembly and disassembly of a tangible product.
+This loop to is specifically a closed one at this point of time to limit the scope but on a larger scale if things start interacting, then an open loop is formed. 
+
+
+To facilitate and encourage greater rates of reuse and recycling in the future. 
+Circular cycle. 
+product design and many cars and computers are now designed for disassembly to allow for future component and material recovery.
+
+This is all about digital materials and building with logic. We currently use analog materials. Manual assembly, robotic assembly and self assembly. Fighting assembly time. A lot of mistakes happen and the amount of information is only stored in the assembler.
+
+1. Each unit must have at least 2 states
+2. The activated structure must have defined boundaries (beginning & end) -Preventing them from attaching to the wrong units -non-aperiodic
+3. Kinetic energy must be captured and transferred to potential energy
+4. Each activated unit must be capable of communicating its state to another unit with which it isin close contact
+5. Must ensure eventual unit contact & latching.
+
+
+

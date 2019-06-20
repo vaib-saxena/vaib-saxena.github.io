@@ -1,0 +1,39 @@
+https://jon.gold/2016/06/declarative-design-tools/
+
+topology optimisation is a
+mathematical approach that optimises material layout
+within a given design space, for a given set of
+loads and boundary conditions, such that the resulting
+layout meets a prescribed set of performance targets.
+The solid isotropic material with penalization (SIMP) method has been widely employed in topology optimizations for its
+effectiveness and low computational cost.
+
+The conjugate gradient method is a mathematical technique that can be useful for the optimization of both linear and non-linear systems. This technique is generally used as an iterative algorithm, however, it can be used as a direct method, and it will produce a numerical solution. Generally this method is used for very large systems where it is not practical to solve with a direct method.  It is helpful in minimization. The precussor for this is "gradient descent" method.  
+In mathematics, a system of linear equations (or linear system) is a collection of two or more linear equations involving the same set of variables.[1] For example,
+
+    3 x + 2 y - z = 1 2 x - 2 y + 4 z = - 2 - x + 1 2 y - z = 0 
+
+is a system of three equations in the three variables x, y, z. A solution to a linear system is an assignment of values to the variables such that all the equations are simultaneously satisfied.
+On the other hand a non-linear system, the change on outputs is not proportional to change in inputs.
+
+https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg - use this link to download the data set
+https://developer.rhino3d.com/api/RhinoScriptSyntax/ - rhinoscript syntax
+by typing editpythonscript you can open the new window and start coding.
+Another thing is tuples are immutable i.e. you cannot change them.
+a = (1,2,3,5) is a tuple
+b = [1,2,3,5] is a list 
+you can have list within a list
+c = [1,2, [1,2], 3]
+print(b[3]) #will print 1,2
+c.append(20) #will add 20 at the end of the list c and will make it c= [1,2, [1,2], 3, 20]
+
+c= range(100) gives a list starting from 0 to 99 i.e c=[0,1,2,......99]
+Another way to do it c = range(start, stop, step), for example c= (10, 99, 2)
+
+for x in range(100) #means that x is a placeholder for range(100) or this could be further written as c = range(100), for x in c:
+
+for x in range(100) runs the code 100 times
+
+for x in range(0,100,5) runs from 0 to 100 but steps in 5
+
+

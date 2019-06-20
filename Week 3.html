@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Week 3-Vaibhav Saxena</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Google Fonts -->   
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		  <li> <a href="index.html"><strong>Home</strong></a> </li>
+		  <li> <a href="Final Project.html"><strong>Final Project</strong></a> </li>
+		  <li> <a <a><strong>Weekly Projects</strong></a></a>
+	         <ul>
+		        <li> <a href="Week 1.html"><strong>Principles and Practices</strong></a> </li>
+	            <li> <a href="Week 2.html"><strong>Project Management</strong></a> </li>
+				<li> <a href="Week 3.html"><strong>Computer-aided Design</strong></a> </li>
+			    <li> <a href="Week 4.html"><strong>Computer-controlled Cutting</strong></a> </li>
+				<li> <a href="Week 5.html"><strong>Electronics Production</strong></a> </li>
+				<li> <a href="Week 6.html"><strong>3D Scanning and Printing</strong></a> </li>
+				<li> <a href="Week 7.html"><strong>Electronics Design</strong></a> </li>
+				<li> <a href="Week 8.html"><strong>Computer-controlled Machining</strong></a> </li>
+				<li> <a href="Week 9.html"><strong>Embedded Programming</strong></a> </li>
+				<li> <a href="Week 10.html"><strong>Molding and Casting</strong></a> </li>
+				<li> <a href="Week 11.html"><strong>Input Devices</strong></a> </li>
+				<li> <a href="Week 12.html"><strong>Output Devices</strong></a> </li>
+				<li> <a href="Week 13.html"><strong>Applications and Implications</strong></a> </li>
+				<li> <a href="Week 14.html"><strong>Networking and Communications</strong></a> </li>
+				<li> <a href="Week 15.html"><strong>Mechanical Design</strong></a> </li>
+				<li> <a href="Week 16.html"><strong>Interface and Application Programming</strong></a> </li>
+				<li> <a href="Week 17.html"><strong>Machine Design</strong></a> </li>
+				<li> <a href="Week 18.html"><strong>Wildcard Week</strong></a> </li>
+				<li> <a href="Week 19.html"><strong>Invention, intellectual property, Income</strong></a> </li>
+				<li> <a href="Week 20.html"><strong>Project Development</strong></a> </li>	
+			  </ul>
+	        </li>
+		  <li> <a href="contact.html"><strong>Contact</strong></a> </li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <h1 class="brand-heading">Week 3</h1>
+			  <p class="intro-text"><strong> Computer Aided Design </strong></p>
+			  <a href="#single-project" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <h2>1. 2D Design</h2>
+	  <div class="col-lg-10 col-lg-offset-1">
+	    <p><strong>Brief Overview</strong></p>
+	    <p class="text-justify">
+				Because of my background in architecture and interest in Photography, I have been using 2D Design software like <i><a href="https://www.adobe.com/in/products/photoshop.html "target="_blank">Adobe Photoshop</a></i> for image processing but have used <i><a href="https://www.adobe.com/in/products/illustrator.html "target="_blank">Adobe Illustrator</a></i> on very few occasions. With this week's assignment I wanted to advance my skills in Illustrator and Photoshop. One of the aims of this week was also to explore the textual scripting side of these softwares. The only disadvantage, I came across was they were paid softwares. Hence, I also decided to explore <i><a href="https://www.gimp.org/ "target="_blank">GIMP</a></i>, a great alternative for Adobe Photoshop but free.
+			</p>
+		  <p><strong>Adobe Illustrator (scripting) </strong></p>
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_14.jpg" alt="">
+      <div class="slider__caption">ExtendScript Toolkit CC supports scripting for Indesign, Illustrator and Photoshop </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_15.jpg" alt="">
+      <div class="slider__caption">To run a script, just go to Debug>Run</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_16.jpg" alt="">
+      <div class="slider__caption">Starting with the very basic syntax to add a new document that opens in Illustrator if the script is ran</div>
+    </div>
+	<div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_17.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_18.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_19.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_21.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_22.jpg" alt="">
+      <div class="slider__caption">The for loop is added at the end to rotate and copy the stroke 7 times</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+		   <p class="text-justify">
+			    <br>I started with the scripting side of Illustrator and the steps are as follows:<br><br>
+			   
+				1. There is IDE(based on Javascript) available for Adobe Illustrator, Photoshop and Indesign called <i><a href="https://helpx.adobe.com/download-install/kb/creative-cloud-apps-download.html" target="_blank">Extendscript Toolkit CC</a></i><br><br>
+				2. An online guide comprising of various syntaxes is also available <i><a href="https://illustrator-scripting-guide.readthedocs.io/" target="_blank">here</a></i> for helping with various syntax and workflow.<br><br>
+				3. When you write a script for Adobe Illustrator, you must first decide which file, or document, the script should act on. The command to reference or access a current document is <i>app.activeDocument</i> and <i>activeDocument</i>, both appear identical in the JavaScript.<br><br>
+				4. A collection of objects contains an array of the objects that you can access by index or name. The collection of objects takes the plural form of the object name. For example, the collection object for the document object is <i>documents</i>.<br><br>
+				5. The Javacript in Extendscript Toolkit uses Containment hierarchy while writing code:<br>
+				<i>var myStyles = app.activeDocument.graphicStyles; //1 </i><br>
+				<i>var firstStyle = myStyles[0]; //2 </i><br>
+				<i>var firstStyle = app.activeDocument.graphicStyles[0]; //3. 2 and 3 perform the same function </i><br><br>
+				6. The first index in a array is [0] and the last index is [length-1]. Total number of objects in a collection is .length<br><br>
+				7. Follwing are some important syntaxes:
+				<br>var styleName = app.activeDocument.graphicStyles[0].name; // This gives the name of the graphic style
+				add() is used to add new objects<br>
+				
+				var myDoc = app.documents.add() //opening a new document<br>
+				var myLayer = myDoc.layers.add() // adds a layer to the active document<br>
+				
+				var selectedObjects = app.activeDocument.selection; // Accesses all the selected objects in the document.<br>
+				
+				There are two ways to create paths in JavaScript<br>
+				First method is to use series of x-y coordinates and second is to use pathPoint object.<br>
+				
+			    app.Documents.length returns the total number of objects in the collection<br><br>
+				
+				6. Debug > Run in the Extendscript Toolkit to run the script or save the script as .jsx or .js and run through File > Scripts
+			</p>
+		  <p><strong>Adobe Illustrator (Vector Graphic) </strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/a-01.jpg" alt="">
+      <div class="slider__caption">Graphic 1</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/a-05.jpg" alt="">
+      <div class="slider__caption">Graphic 2</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/a-02.jpg" alt="">
+      <div class="slider__caption">Graphic 3</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Illustrator/b.gif" alt="">
+      <div class="slider__caption">Using blend tool in Illustrator</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_13.jpg" alt="">
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_1.jpg" alt="">
+      <div class="slider__caption">Customizing the blend tool</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_3.jpg" alt="">
+      <div class="slider__caption">The curves didn't appear very smooth and hence needed correction</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_1a.jpg" alt="">
+      <div class="slider__caption">Using control points of each curve to corect them</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_4.jpg" alt="">
+      <div class="slider__caption">Smoothed out curves</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_5.jpg" alt="">
+      <div class="slider__caption">Variable thickness of a stroke can be provided by two means either by width tool or predefined stroke widths</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_6.jpg" alt="">
+      <div class="slider__caption">I used predefined thickness for the time being</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_7.jpg" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_8.jpg" alt="">
+	  <div class="slider__caption">Using a "Random Select" script to randomly select a certain percentage of objects </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_9.jpg" alt="">
+      <div class="slider__caption">Using a "Random Select" script to randomly select a certain percentage of objects </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Illustrator/compressed/Screenshot_10.jpg" alt="">
+      <div class="slider__caption">Giving color to randomly selected objects</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		<p class="text-justify">
+				Adobe Illustrator has some really powerful options to create vector graphics. I particularly focussed on Blend Tool, Puppet Wrap Tool and played around with various line widths to create a series of graphics based on a common theme of BIRTH, KAIROS AND LIFT-OFF. I also extended the use of Illustrator by using pre-defined scripts downloaded from the internet. I used a script called Random Select, that randomly selects objects based on the percentage select and I gave them a different color to play around with. The script can be downloaded <i><a href="https://www.scriptopedia.org/en/js-illustrator/53-random-objects-selection.html" target="_blank">here.</a></i> 
+			</p>
+		  <p><strong>GIMP</strong></p>
+	 <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_1.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_2.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_3.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_4.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_5.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_6.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_10.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_11.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_12.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_13.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_14.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_15.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_16.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/GIMP/Screenshot_17.png" alt="">
+      <div class="slider__caption"></div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+				<i><a href="https://www.gimp.org/downloads/" target="_blank">GIMP</a></i> has many features that are equivalent to Adobe Photoshop. While Photoshop uses .psd file extension format to save everything like layers, path etc. GIMP uses .xcf file extension format. There were few things that I wanted to do in GIMP and see how it fares compared to Photoshop. First bulk image compression, secondly conversion of colored photographs to black and white photo. <br><br>
+				Mono Mixer for converting colored images to black and white images provides the option to mix RGB filter that is equivalent to a physical camera filter. Increase in red filter darkens the blue sky in black and white photo.<br><br>
+				Color to Gray option surprized me with the amount of tonality it adds to the black and white image, since personally I prefer black and white images with a bit of punch. I would prefer this option over Mono Mixer. Both Mono Mixer and Color to Gray option provides realtime parameters to make changes. I also tried Desaturate option but it didn't impress me to give punchy black and whites hence, Color to Gray is my go to option for converting to black and whites.<br><br>
+				
+				To execute batch image processing, that comes really handy to perform the same function on large set of files, there are couple of ways. First, I downloaded the <i><a href="https://github.com/alessandrofrancesconi/gimp-plugin-bimp/releases/tag/v2.0" target="_blank">BIMP</a></i> plugin and used it to compress large number of files at once. Here are the steps: <br><br>
+				
+				1. By clicking on the add button, several options are displayed like resize, crop etc. A combination of features can be created and implemented on a single or a set of images.<br><br>
+				
+				2. I wanted to change the format of myscreenshots and compress them, hence I chose only one option. <br><br>
+				
+				3. Next, in the input folder, one can either add a single image or a bunch of images in a folder. The output folder is as simple as it gets. I selected a folder containing screenshots of 3.6 mb and compressed them to 2.5 mb.<br></p>
+				
+				<p class="text-justify">
+				Since lot of things in GIMP are similar to Photoshop, I wanted to try simple image processing from command line. Here are the steps: <br><br>
+				1. Script-Fu is an inbuilt console in GIMP and can be easily accessed by going to Filters> Script-Fu> Console>. It is based on Scheme programming language. <br><br>	  
+				2. Once the console is open, you can click on 'browse' to access most of the functions to either create a new image file, add layers, write text or duplicate something and many other features. <br><br>
+				3. Each command has some parameters that has to be edited in order to execute that function.<br><br>
+				4. i) gimp-image-new creates a new image. <br>ii) gimp-layer-new creates a new layer. <br>iii) gimp-image-add-layer adds the new layer to the image. Till now nothing will be visible in GIMP since we have created virtual image and layer and a display command will show the work done till now.<br> iv) gimp-display-new will display the layer.<br> v) gimp-drawable-fill can fill the current layer with either foreground or background color. <br> vi) gimp-text-fontname writes the text in a new layer.<br><br>
+				After spending almost over a day to figure out how to use GIMP, Script-Fu and making scripts, I felt the process to give commands and create new images and layers was a bit on the slower side. I intend to use GIMP more for black and white conversion and will slowly pick up its coding in future weeks. This <i><a href="https://docs.gimp.org/2.10/en/gimp-using-script-fu-tutorial-script.html" target="_blank">link</a></i> further describes how to write scripts in GIMP.
+				  
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="second-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <h2>3D Design</h2>
+	  <div class="col-lg-10 col-lg-offset-1">
+	    <p><strong>Brief Overview: </strong></p>
+	    <p class="text-justify">
+				Before starting 3D Design, I wanted to be clear with few of the concepts involved in 3D design. Firstly, the difference between imperitive and declarative design. In imperitive design, we are telling the computer how to design something by inputting a set of instructions on the other hand in declarative design, we just tell the computer what we want/design and let the computer figure out rest of the things. Next important field of design that I have been trying to explore is Generative design(https://www.linkedin.com/pulse/what-generative-design-anthony-hauck/). It is a form finding iterative, alogorithmic process where certain contraints are set and goals to be achived are set to achieve solutions. Out of all three of them, we have been doing imperitive design/programming for a really long time, since we have known computers. The other two on the other hand, have been relatively new. Generative design is something that is getting popularized with more computing power and provides solutions for material and energy efficiency, high performance and even lower costs to name a few.
+			</p>
+		  <p><strong>Rhinoceros with Grasshopper(Generative Optimization)</strong></p>
+		  <br>
+		  <section id="gallery">
+  <div class="slider-container third">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 3/Rhino/2.gif" alt="">
+      <div class="slider__caption">1 Slide <a href="#0">more</a> </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Rhino/3.gif" alt="">
+      <div class="slider__caption">2 Slide</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Rhino/4.gif" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+ </br>
+</section>
+		  <p class="text-justify">
+			  
+			</p>
+		<p><strong>Python in Rhinoceros(points and lines)</strong></p>
+		  <br>
+		  <section id="gallery">
+  <div class="slider-container third">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 3/gif.gif" alt="">
+      <div class="slider__caption">1 Slide </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_7.jpg" alt="">
+      <div class="slider__caption">2 Slide</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_8.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_9.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_10.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_11.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+ </br>
+</section>
+	<p class="text-justify">
+		Grasshopper is a a great tool to start writing algorithms in Rhinoceros but sometimes you might feel that it is restricting you to do things. Hence, I got my hands on Python in Rhinoceros. Rhino has its own library that can be imported into a Python script and you can work with all the functions of Rhinoceros and much more.<br><br>
+		I started dealing with points and curves as they form the basis for creating advanced designs. The logic behind the following code is that I created two functions based on the parametric ellipse equation by the inputs for the radius of the ellipse was determined by the random number generator. The following code elaborates visual I created above:<br><br>
+		
+		import rhinoscriptsyntax as rs     #imports the rhinoceros library into python <br>
+import random #imports random library <br>
+import math <br><br>
+
+def curve1(z):  #creating a function curve1<br>
+	a=0 <br>
+	b=0<br>
+	points=[]<br>
+	for t in range(0,314,2):<br>
+		a+=random.uniform(10,30)<br>
+		b+=random.uniform(30,40)<br>
+		x=a*math.cos(t)<br>
+		y=b*math.sin(t)<br>
+		rs.AddPoint(x,y,z)<br>
+		points.append((x,y,z))<br>
+	return rs.AddInterpCurve(points,3)<br><br>
+
+
+def curve2(z):<br>
+	a=0<br>
+	b=0<br>
+	points=[]<br>
+	for t in range(0,314):<br>
+		a+=random.uniform(90,100)<br>
+		b+=random.uniform(200,500)<br>
+		x=b*math.cos(t)<br>
+		y=a*math.sin(t)<br>
+		rs.AddPoint(x,y,z)<br>
+		points.append((x,y,z))<br>
+		
+	return rs.AddInterpCurve(points,3)<br><br>
+
+for c in range(0,1000,15):<br>
+	if c%4==0:<br>
+		curve1(c)<br>
+	else:<br>
+		curve2(c)<br>
+			  
+			</p>
+	
+<p><strong>Python in Rhinoceros(surfaces)</strong></p>
+		  <br>
+		  <section id="gallery">
+  <div class="slider-container third">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_17.jpg" alt="">
+      <div class="slider__caption">1 Slide </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_18.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_12.jpg" alt="">
+      <div class="slider__caption">2 Slide</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_13.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_14.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_15.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_16.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_18.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+ </br>
+</section>
+	<p class="text-justify">
+	Next up I tried to create surfaces from the lines which inturn were created from the points generated through the python script. One thing of notice here is that though the script looks simple and clean but the random library brings about a lot of abstractness in the new form generation. This further helped me more in engaging with learning python through a creative means. In this particular code, I started by creating a set of points and lines from those points. In the second part of the code I create surfaces by lofting each line with all the other lines one at a time. This is repeated for all the lines. The code for the above geometry is as follows: <br><br>
+	import rhinoscriptsyntax as rs<br>
+import random<br><br>
+for c in range(50):<br>
+	listofpoint=[]<br>
+	for i in range(2):<br>
+		x=random.uniform(-200,200)<br>
+		y=random.uniform(-200,200)<br>
+		z=random.uniform(-300,300)<br>
+		listofpoint.append([x,y,z])<br><br>
+		
+	rs.AddPolyline(listofpoint)<br>
+
+lines1=rs.GetObjects("select lines1")<br>
+lines2=rs.GetObjects("select lines2")<br>
+threshold=2000<br>
+for line1 in lines1:<br>
+	for line2 in lines2:<br>
+		mid1=rs.CurveMidPoint(line1)<br>
+		mid2=rs.CurveMidPoint(line2)<br>
+		if rs.Distance(mid1,mid2)<threshold:<br>
+			rs.AddLoftSrf([line1, line2])<br>
+</p>
+		  <br>
+		  <section id="gallery">
+  <div class="slider-container third">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_25.jpg" alt="">
+      <div class="slider__caption">1 Slide </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_22.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_23.jpg" alt="">
+      <div class="slider__caption">2 Slide</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 3/Screenshot_19.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_20.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_21.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_23.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 3/Screenshot_24.jpg" alt="">
+      <div class="slider__caption">3 Slide</div>
+    </div>
+	  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+ </br>
+</section>
+	<p class="text-justify">
+	I gave another shot to create an abstract 3D design that was inspired by desert roses(which I realized later). This particular script works on the fact that you create random points and lines, then the user is asked to select few lines and points. The second part of the code looks for the closest point from each line and extrudes a surface from the line to that point. The code is as follows <br><br>
+	import rhinoscriptsyntax as rs <br>
+import random<br><br>
+
+for c in range(200):<br>
+	listofpoint=[]<br>
+	for i in range(3):<br>
+		x=random.uniform(-200,200)<br>
+		y=random.uniform(-200,200)<br>
+		z=random.uniform(-300,300)<br>
+		a=rs.AddPoint(x,y,z)<br>
+		rs.MoveObject(a,(random.uniform(-400,400),random.uniform(-200,200),random.uniform(-400,400)))<br>
+		print a<br>
+		listofpoint.append((x,y,z))<br>
+
+	rs.AddPolyline(listofpoint)<br>
+
+getcurves=rs.GetObjects("select curves",4)<br>
+getpoints=rs.GetObjects("select points",1)<br>
+
+for curve in getcurves:<br>
+	alldistance=[]<br>
+	for point in getpoints:<br>
+		midpoint=rs.CurveMidPoint(curve)<br>
+		distance=rs.Distance(point,midpoint)<br>
+		alldistance.append(distance)<br>
+	pairing = zip(alldistance,getpoints)<br>
+	pairing.sort()<br>
+	firstpoint = pairing[0][1]<br>
+	rs.ExtrudeCurvePoint(curve,firstpoint)<br>
+
+</p>
+	
+	
+	
+		 </div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		ALL PROJECTS WERE CREATED UNDER CREATIVE COMMONS LICENSE<br/>
+		CREATED AT VIGYAN ASHRAM, PUNE UNDER FAB ACADEMY
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/myeqlr.js"></script>
+</body>
+</html>

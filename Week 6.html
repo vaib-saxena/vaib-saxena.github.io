@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Week 6-Vaibhav Saxena</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Google Fonts -->   
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+		  <li> <a href="index.html"><strong>Home</strong></a> </li>
+		  <li> <a href="Final Project.html"><strong>Final Project</strong></a> </li>
+		  <li> <a <a><strong>Weekly Projects</strong></a></a>
+	         <ul>
+		        <li> <a href="Week 1.html"><strong>Principles and Practices</strong></a> </li>
+	            <li> <a href="Week 2.html"><strong>Project Management</strong></a> </li>
+				<li> <a href="Week 3.html"><strong>Computer-aided Design</strong></a> </li>
+			    <li> <a href="Week 4.html"><strong>Computer-controlled Cutting</strong></a> </li>
+				<li> <a href="Week 5.html"><strong>Electronics Production</strong></a> </li>
+				<li> <a href="Week 6.html"><strong>3D Scanning and Printing</strong></a> </li>
+				<li> <a href="Week 7.html"><strong>Electronics Design</strong></a> </li>
+				<li> <a href="Week 8.html"><strong>Computer-controlled Machining</strong></a> </li>
+				<li> <a href="Week 9.html"><strong>Embedded Programming</strong></a> </li>
+				<li> <a href="Week 10.html"><strong>Molding and Casting</strong></a> </li>
+				<li> <a href="Week 11.html"><strong>Input Devices</strong></a> </li>
+				<li> <a href="Week 12.html"><strong>Output Devices</strong></a> </li>
+				<li> <a href="Week 13.html"><strong>Applications and Implications</strong></a> </li>
+				<li> <a href="Week 14.html"><strong>Networking and Communications</strong></a> </li>
+				<li> <a href="Week 15.html"><strong>Mechanical Design</strong></a> </li>
+				<li> <a href="Week 16.html"><strong>Interface and Application Programming</strong></a> </li>
+				<li> <a href="Week 17.html"><strong>Machine Design</strong></a> </li>
+				<li> <a href="Week 18.html"><strong>Wildcard Week</strong></a> </li>
+				<li> <a href="Week 19.html"><strong>Invention, intellectual property, Income</strong></a> </li>
+				<li> <a href="Week 20.html"><strong>Project Development</strong></a> </li>	
+			  </ul>
+	        </li>
+		  <li> <a href="contact.html"><strong>Contact</strong></a> </li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <h1 class="brand-heading">Week 6</h1>
+			  <p class="intro-text"><strong> 3D Scanning and Printing </strong></p>
+			  <a href="#single-project" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- Project Details Section -->
+<section id="single-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <div class="col-lg-10 col-lg-offset-1">
+		  </p><h2>How to limit yourself while exploring?</h2>
+	    <p class="text-justify"><font color="grey"><i>
+			<b>1. "3D printing is as good as your design", I remember this while reading an article on 3D Printing by Andreas Bastian.<br><br>
+			2. Design to 3D Print or Design, Messup with the GCode and then 3D Print (you can come up with your own).<br><br>
+			3. 3D scanning definitely requires a setup to be get better scans, be it photogrammetry or 3D scanners </i></font><br><br></b>	
+		</p>
+		  <h2>3D Printing</h2>
+	    <p><strong>Brief Overview</strong></p>
+	    <p class="text-justify">
+				Afer finishing Week 4, whose main focus was on subtractive processes, this week focusses on additive processes and more so on 3D printing. This week foresees designs that could not be made using subtractive process like Laser Cutting but rather only through additive process like 3D Printing. While digging deeper into 3D printing, it could also be noticed how various kind of 3D printers work with different materials. A common observation is that 3D printer wastes way less material as compares to subtractive process like Laser Cutting. Since, I already had some experience with 3D Printing(FDM) before, while designing my 3D Printer at Fab Lab CEPT.  At our FabLab in Vigyan Ashram, Pune we used <i><a href="https://fracktal.in/products-3dprinters.html" target="_blank">Fracktal Works 3D Printer</a></i> named Julia, it is a FDM (Fused-Deposition Molding) printer. Some of the key things of this printer are as follows:<br><br>1. Built volume is limited to 200mmx200mmx200mm.<br>2. It takes only STL and G-code formats<br>3. Its a single extruder 3D Printer esentially a FDM printer. <br>4. The layer height varies from 60-300 microns. <br>5. The slicing software associated with it to assist in slicing and generating Gcode is called Fracktory. <br><br> With my past experience I have found that FDM printers are good for quick protyping and I have had a disliking towards them for their lack of precision and due to the presence of layers. Though it can be removed using post prcessing techniques. Another factor being that a FDM printer has the ability to print only a certain set of geometry very quickly when compared to a SLA or SLA printer. The addition of supports increases the print time. Hence, for this week's assignment I used <i><a href="https://en.wikipedia.org/wiki/Polylactic_acid" target="_blank">PLA</a></i>(Polylactic Acid, a biodegradable plastic) as a filament and rather than going for 3D printing some fancy things I tried to use a slightly different approach. PLA is not very flexible in nature and I wanted to 3D print something that can exhibit some flexibility. On the other hand I wanted to play around with GCode to see how the the machine responds to it.</p><br>
+		<p><strong>Group Assignment</strong></p>
+		<br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/GA/IMG_9596.JPG" alt="">
+      <div class="slider__caption">Infill test. 1. Ultra quality 2. High quality 3. Normal quality 4. Fast quality <a href="#0"></a> </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/GA/test_desc.jpg" alt="">
+		  <div class="slider__caption">3D printer Test v3 file by ctrlV</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/GA/IMG_9599.JPG" alt="">
+		  <div class="slider__caption">Results of 3D printer test, left one shows normal quality print and right one shows fast quality print. The marked box displays the overhangs, the normal quality print printed it perfectly fine but fast quality print couldn't(25 and 30 degree ones) </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/GA/IMG_9601.JPG" alt="">
+      <div class="slider__caption">The hole test</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/GA/IMG_9603.JPG" alt="">
+      <div class="slider__caption">The resolution test</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+		   <p class="text-justify">
+			    Before starting out to 3D model our designs, a mandatory assignment had to be finished along with other batchmates, in order to determine various parameters like how thin and fine can be print, how much overhang can we give and how much infill density we need to name a few. These parameters will help us while designing and they kind of set a limit for us. <br><br>Firstly, we wanted to see how various settings work out starting from Ultra, High, Normal and Fast quality i.e an Infill test. The obvious observation was the amount of time taken to print them. Also, the density of the internal lattice also decreases from Ultra to Fast. One can also notice a difference in the surface finish. The surface feels more smooth when its printed using Ultra settings. Hence, this also concludes that if we want to just test our designs, the recommended settings start with Normal settings unless the design requires joints between objects, in this case Ultra settings are needed.<br><br>
+			   Our group decided to take a 3D printer Test v3 file by ctrlV(illustration 2 above) that involves 20 tests in one go. We used fast as well as normal quality settings to 3D print the file. While using the fast settings our 3D printer couldn't print 25 and 30 degree angles in the overhang section of the file. When we used the normal settings, there wasn't any discrepency. The reason attributed to this is because of the time it takes for varies layers to cool down and fuse together.<br><br>
+			   The last leg of this assignment, a hole test involved creating holes of varying diameters to see how small the 3D printer could print. We used normal quality settings to 3D print. We observed that the 0.5 mm hole didn't print well. To complement this test we also did a resoluton test firstly, to see if these holes can fit in cyclinders of similiar diameter (which they didn't) and also to check their rigidity. We concluded that rigidity is directly proportional to thickness(here diameter).
+			      </p>
+		  <p><strong>Bending</strong></p>
+		  <br>
+		 <section id="gallery">
+  <div class="slider-container first">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9399.JPG" alt="">
+      <div class="slider__caption">3D printed object(5 centimeters in diameter) flexible in nature due to interweaving lattice <a href="#0"></a> </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Julia.jpg" alt="">
+		  <div class="slider__caption">3D printer (FDM) used at our Fab Lab</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_18.jpg" alt="">
+      <div class="slider__caption">Designing the 3D model in Rhinoceros with Grasshopper. </div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/4.gif" alt="">
+		<div class="slider__caption">The two intertwined lattice</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_19.jpg" alt="">
+      <div class="slider__caption">Options to export the 3D model as .stl format</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9298.JPG" alt="">
+      <div class="slider__caption">The freshly printed 3D model with supports. Removing the supports was a time-taking process.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9402.JPG" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9404.JPG" alt="">
+      <div class="slider__caption">The 3D printed object displayed bending and torsion</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9405.JPG" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9406.JPG" alt="">
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9407.JPG" alt="">
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+	</br>
+</section> 
+		   <p class="text-justify">
+			    To try out something new, I started with 3D modelling in an attempt to work towards the concept of <i><a href="https://en.wikipedia.org/wiki/Metamaterial" target="_blank">metamaterials</a></i> to explore if a 3D printed object using PLA could be made flexible or not. Metamaterials – a type of engineered material defined by its 3D internal structure rather than what substance it is made of have displayed characteristics that natural materials cannot especially shape morphing. I was inspired by <i><a href="http://www.erwinhauer.com/" target="_blank">Erwin Hauer's</a></i> installations and made a small script using Grasshopper mimicing the same. I then applied this pattern on a very simple half loop surface called <i><a href="https://en.wikipedia.org/wiki/M%C3%B6bius_strip" target="_blank">mobius strip</a></i>. Since we were told by our lab instructrs initially, to limit the size of our 3D prints upto few centimeters(5 cm or less), hence I chose to print a smaller one. <br><br>
+				
+		Once the scripting was finished in Grasshopper and Rhinoceros, it gives you an option to export the file in .stl format to 3D print. The export options displays the total number of triangles and also the option to export in either Binary format or ASCII format. For my first print, I chose "Ultra" quality 3D print option. Because of the nature of the model, it generated lot of supports. It took total of 90 minutes to print. One thing to notice here is the time displayed on software for 3D printing is less as compared to the actual time taken. This extra time is attributed to raise the temperature of the bed and the extruder.The following were the settings used in the print:<br><br>
+			   1. Extruder Temperature 230° celcius<br>
+			   2. Bed Temperature 100° celcius<br>
+			   3. Shell Thickness 0.8 mm<br><br>
+			   
+			   Download the file <i><a href="img/Week 6/meta.3dm" download>here</a></i> <br>
+	
+		</p>
+		  <p><strong>Weaving</strong></p>
+		  <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9412.JPG" alt="">
+		   <div class="slider__caption">Attempt to 3D print another weaving pattern(with supports)</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_20.jpg" alt="">
+		  <div class="slider__caption">The proposed geometry mimics the interweaving of a textile.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_21.jpg" alt="">
+		  <div class="slider__caption">Simple logic to generate the interweaving</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_1.jpg" alt="">
+		   <div class="slider__caption">Using Fracktory to generate the gcode for 3D printer</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9302.JPG" alt="">
+		   <div class="slider__caption">Because of the nature of the geometry, again lot of supports had to be provided</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9409.JPG" alt="">
+		  <div class="slider__caption">The finished product didn't come out well, even after giving the best(ultra) settings</div>
+	  </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		<p class="text-justify">I was really excited after seeing the results of my first 3D print, hence I went ahead for another 3D print based on similar lines. I tried to mimic the interweaving pattern of the textile, thinking that I would be able to push the properties of PLA by bending the 3D printed object solely based on its design. I again opted for Grasshopper to code a pattern. The pattern is simple in logic with pushing alternative points up and down by a distance and creating a curve by interpolating through the points. The curve can be given a thickness and a width. Since I wanted the pattern to be as thin as possible, I gave a thickness of 0.5 mm. Also, the distance between the cross strips was 2 mm, to provide the essential gap to bend.<br><br>
+	I repeated the above mentioned process to export the file to .stl format and generated the gcode with "Ultra" settings and providing the much needed supports. The 3D print came out to be pretty dishearting with only horizontal strips getting printed. I couldn't debug the process as to why the 3D printer failed to print the complete object.<br><br>
+			Download the file <i><a href="img/Week 6/interweaving.3dm" download>here</a></i> <br>
+
+</p>
+		  <p><strong>Experimentation with Gcode</strong></p>
+	 <br>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9381.jpg" alt="">
+      <div class="slider__caption">3D printing under one hour with no supports inspired by an example file with some changes</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_3.jpg" alt="">
+      <div class="slider__caption">Editing the script to change the bed and extruder temperature</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9324.JPG" alt="">
+      <div class="slider__caption">The Gcode generated was printing the object from top to down and hence the Grasshopper script needed some debugging. A curve has a orientation in Grasshopper and based on my experience I felt that flipping the curve should change the direction of Gcode to bottom to top </div>
+    </div>
+	  <div class="slider__item">
+      <img src='img/Week 6/Paint/IMG_9318.JPG' alt="">
+      <div class="slider__caption">3D printing in process</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_22.jpg" alt="">
+      <div class="slider__caption">The working Gcode displaying the Gcode commands. The actual printing begins from G1 telling the printer to move in a straight line to a point</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9378.JPG" alt="">
+      <div class="slider__caption">The surface finish came out very smooth</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9383.JPG" alt="">
+      <div class="slider__caption">It can definetly serve as a night lamp</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9385.JPG" alt="">
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9322.JPG" alt="">
+      <div class="slider__caption">Less than one hour to print</div>
+    </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+		  <p class="text-justify">
+				There were two things that I noticed after the above two prints, firstly, the supports in 3D printing is taking awfully lot of time and secondly its important to see how Gcode is working. With my past experience with Gcode while building my 3D printer, I went ahead to customize the Gcode in Grasshopper and see how the results came. The control over Gcode helps in providing very unexpected results. Grasshopper has a plugin called Silkworm that allows you to generate and customize the Gcode. I used an example file as a base and customized it according to my needs. The whole process to generate a Gcode is based on subdividing a curve in Grasshopper into many points, getting their coordinates and adding <i><a href="https://en.wikipedia.org/wiki/G-code#List_of_G-codes_commonly_found_on_FANUC_and_similarly_designed_controls_for_milling_and_turning" target="_blank">Gcodes</a></i> to create a series of strings. The whole process involves branching and data trees.<br><br>
+			  I started with a base example file and changed things like bed temperature(using Gcode M190 S100) and extruder temperature(using Gcode M109 S235), S here depicts the temperature in celsius. In this 3D print, to be on a safer side a constant feedrate of 1200 mm/min was given denoted by F1200 in the Gcode. I further had to change the orientation of the curve because of the discrepencies in the code. One thing of importance here is that, this printing was finished under one hour and no supports were used. I would also want to stress here that an example file helped me understand what all is missing in the Grasshopper code and how well it prints with the 3D Printer available to us. <br><br>
+			  
+			  Download the file <i><a href="img/Week 6/Download files/Circle.gh" download>here</a></i> <br>
+			</p>
+	<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/1.gif" alt="">
+      <div class="slider__caption">The custom code to generate Gcode with internal lattice.</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_5.jpg" alt="">
+      <div class="slider__caption">Changing feedrate to F3000</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9344.JPG" alt="">
+      <div class="slider__caption">3D printing in process</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9386.jpg" alt="">
+      <div class="slider__caption">This object was printed using a very different Feedrate of 3000 mm/min(speed) and hence one can see the internal meshes as taut compared to the previous one</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9389.JPG" alt="">
+      <div class="slider__caption">The surface finish is also very different compared to the previous one</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9391.JPG" alt="">
+		  <div class="slider__caption">The finished product</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9348.JPG" alt="">
+		   <div class="slider__caption">It took only 25 minutes to finish the print</div>
+    </div>  
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+<p class="text-justify">
+				After printing the previous 3D object using custom Gcode, I next moved on to fully customizing the Gcode using Grasshopper. I also realized that I can further increase the speed of the process i.e. the feedrate. I observed in my last print that the internal structure was very lose due to slow feed rate(speed), hence in this Gcode I changed the Feedrate for both external as well as internal structure to F3000 i.e. 3000 mm/min. After printing I realized that even though the printing was very fast, the external surface is not as smooth as the previous 3D print but the internal mesh is taut, due to less time given to it to harden.<br><br>
+	
+	Download the file <i><a href="img/Week 6/Download files/Triangle and Ellipse.gh" download>here</a></i> <br>
+			</p>
+<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_6(failure).jpg" alt="">
+      <div class="slider__caption">Pushing towards a curved surface with overhangs</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_7(failure).jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9361.JPG" alt="">
+      <div class="slider__caption">Failure due to overhang and high feedrate: The feedrate for extenal surface was F1200 and for internal it was F6000</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9395.JPG" alt="">
+		   <div class="slider__caption">I ultimately stopped prinitng mid-way and this is the failed product</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_8(semi failure).jpg" alt="">
+      <div class="slider__caption">Changing the twisting(reducing overhang) and feedrate</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_8(semi failure)2.jpg" alt="">
+      <div class="slider__caption">Changing the twisting helps in reducing the overhangs</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9417.JPG" alt="">
+		  <div class="slider__caption">The external surface </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9418.JPG" alt="">
+		    <div class="slider__caption">There was an issue with the internal structure, some of them didn't print accordingly</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9422.JPG" alt="">
+		    <div class="slider__caption">The final object </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9424.JPG" alt="">
+		    <div class="slider__caption">The external surface can be seen slightly jagged </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9431.JPG" alt="">
+		    <div class="slider__caption">Due to single, thin external layer, it allows light to pass through to some degree</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9433.JPG" alt="">
+    </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+<p class="text-justify">
+	I further moved to challenge myself as to how the printer will behave if I create a curved geometry(overhanging in ths case). I twisted the ellipse and generated a Gcode changing the value of external surface feedrate(speed) to F1200(Gcode) and internal feedrate to F6000. The result was a failure since F6000 was way too much for the internal mesh. Also, the feedrate of F1200 turned out to be a bit too much for the external overhang. Hence, in the next iteration, I reduced the twisting. hence the overhang and brought down the internal mesh feedrate to F3000. The result was better now but still there was a lot of room for improvement.<br><br>
+	Download the file <i><a href="img/Week 6/Download files/Triangle and Ellipse.gh" download>here</a></i> 
+			</p>
+<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9981.JPG" alt="">
+      <div class="slider__caption">Curved geometry with crossovers and internal mesh 3D printed with ABS</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_29.jpg" alt="">
+      <div class="slider__caption"></div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_31a.jpg" alt="">
+      <div class="slider__caption">The external curve is controlled using graph mapper based on Gaussian normal distribution curve</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_32a.jpg" alt="">
+      <div class="slider__caption">The variable density of internal mesh by changing the parameter</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_30.jpg" alt="">
+      <div class="slider__caption">The final Gcode generated using Silkworm plugin. For 3D printing it, you have just copy it and paste it in a new notepad and save as .nc file </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9882.JPG" alt="">
+		   <div class="slider__caption">3D printing in process</div>
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9886.JPG" alt="">
+      <div class="slider__caption">One can clearly see that the external surface finish isn't that great</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9889.JPG" alt="">
+      <div class="slider__caption">The failure due to overhang</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9891.JPG" alt="">
+		  <div class="slider__caption">3D printing in process </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9990.JPG" alt="">
+		    <div class="slider__caption">The finished product - hero shot</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9982.JPG" alt="">
+		    <div class="slider__caption">The view from the top with internal mesh </div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9987.JPG" alt="">
+		    <div class="slider__caption">One can clearly see the internal mesh and its density under the effect of light </div>
+    </div>
+	  <div class="slider__item">
+      <iframe width="910" height="512" src="https://www.youtube.com/embed/-e0sirR5jiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    <div class="slider__caption">The 3d printing process </div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+<p class="text-justify">
+	Most of the geometries that I made above didn't include any kind of crossovers, they were mostly closed curves without any kinks. In the grasshopper code, I added <i><a href="https://en.wikipedia.org/wiki/Normal_distribution" target="_blank">Gaussian normal distribution curve</a></i> for the external geometry. The geometry I made could be further thought of as 4 geometries surrounding the one geometry but all connected. Furthermore, I also didn't try making anything with ABS(Acrylonitrile butadiene styrene). ABS is tougher than PLA and I wanted to see how the surface finish comes up. To be on a safer side, I kept the feedrate at F1200. One of the parameters, I included is the internal mesh density. By changing the number slider marked "Internal Mesh" one can change pattern of internal mesh and also its density.<br><br>
+	
+	Download the file <i><a href="img/Week 6/Download files/Floral.gh" download>here</a></i> <br>
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="second-project">
+<div class="container content-section text-center">
+	<div class="row">
+	  <h2>3D Scanning</h2>
+	  <div class="col-lg-10 col-lg-offset-1">
+	    <p><strong>Brief Overview: </strong></p>
+	    <p class="text-justify">
+				Couple of years back I had tried 3D scanning with utter failure, back then I used Photogrammetry(Autodesk Remake) to take photos from certain specified directions and uploaded it to the cloud but due to slow internet speed and super heavy files couldn't see the final result. Hence, when we were introduced to <i><a href="https://www.3dsystems.com/shop/sense" target="_blank">Sense 3D</a></i>, a 3d scanning device based on Laser line triangulation I was excited to get my hands on it. Its a plug and play kind of a device and can be used as a handheld device too but needs a proper setup with tripod for precise scanning. Later, I decided again to go back to Photogrammetry, to see how the same object(plant with a pot) fares with using Photogrammetry. I used Autodesk Recap Photo to generate the 3D model from images. 
+		  <p><strong>Steps</strong></p>
+		  <br>
+	<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/3.gif" alt="">
+      <div class="slider__caption">The final 3D scanned plant with pot</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/IMG_9434.JPG" alt="">
+      <div class="slider__caption">The plant that was 3D scanned</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_17.jpg" alt="">
+      <div class="slider__caption">The final 3D scanned plant with pot</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_12.jpg" alt="">
+    </div>
+	   <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_13.jpg" alt="">
+      <div class="slider__caption">Select an option accordingly</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/vaibhav/Screenshot_1.jpg" alt="">
+      <div class="slider__caption">Keep the object in the center circle</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/vaibhav/Screenshot_2.jpg" alt="">
+		  <div class="slider__caption">Lost tracking due to unwanted movements and not using a tripod</div>
+    </div>
+	 <div class="slider__item">
+      <img src="img/Week 6/Paint/vaibhav/Screenshot_4.jpg" alt="">
+		  <div class="slider__caption">I prevented to use the solidify option after using it for the first time, it results in uneven mesh joining </div>
+    </div>
+	 
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+		  <p class="text-justify">
+			  We had to first download a software for <i><a href="https://www.3dsystems.com/shop/support/sense2/downloads" target="_blank">Sense 3D</a></i> to operate. Its a very simple process and is illustrated above. After installation it asks for a code to pair your 3D scanner. Next follow the steps below to scan an object <br>
+		  <p class="text-justify">
+			  a. Choose from the options as to what kind (size) of object is to be scanned(object or body).<br>
+			  b. In objects, select the size of the object to be scanned.<br>
+			  c. I found out that the ideal distance is around 45 cms from the object.<br>
+			  d. Place the object in the circle and start moving around with the 3D Scanner(don't lose tracking).<br>
+			  e. If one wants they can go around again after completing one revolution.<br>
+		<p class="text-justify">
+		      I finally decided to scan a small plant in a pot for its complexity and texture. The first attempt wasn't that great and I was too shaky to hold the 3D scanner. I also used the solidify option to close the mesh and make it a water tight mesh but it ruins the final mesh. In the very next iteration, I tried to be as slow as possible and did two revolutions around the object. This time it was slightly better and also I didn't choose to close the mesh this time around. I certainly wasn't impressed by the final product.<br><br>
+			There were few drawbacks that I saw while using Sense 3D.<br> 1. Though it is meant to be a handheld device but it certainly needs a setup to increase the accuracy of the final scans. <br> 2. You cannot scan shiny or transparent objects with 3D scanner. <br>3. It needs a USB wired connection, hence it makes it immobile.
+			</p>
+		<p class="text-justify">Download the final files <i><a href="http://brickisland.net/cs177/?p=144" target="_blank">here</a></i></p><section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/5.gif" alt="">
+		  <div class="slider__caption">The final 3D scanned plant using photogrammetry</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_10.jpg" alt="">
+		  <div class="slider__caption">Chose the option under Create 3D according to what needs to be photographed</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_28.jpg" alt="">
+		  <div class="slider__caption">The three levels from which I clicked the photographs and various positions at each level</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_15.jpg" alt="">
+		  <div class="slider__caption">I took around 107 images of the plant with the pot, but the student version accepts only upto 100 images</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_14.jpg" alt="">
+      <div class="slider__caption">I took around 107 images of the plant with the pot, but the student version accepts only upto 100 images</div>
+    </div>
+    <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_16.jpg" alt="">
+		<div class="slider__caption">Give your project a name and it would be saved in the cloud</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_23.jpg" alt="">
+		  <div class="slider__caption">The 3D model is ready to be downloaded</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_24.jpg" alt="">
+		  <div class="slider__caption">Exporting the 3D model in .stl format</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_25.jpg" alt="">
+		  <div class="slider__caption">Once I opened the file in Rhinoceros in rendered mode, I realized that it doesn't export textures</div>
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_26.jpg" alt="">
+		  <div class="slider__caption">Exporting the 3D model in .obj format</div>
+		  
+    </div>
+	  <div class="slider__item">
+      <img src="img/Week 6/Paint/Screenshot_27.jpg" alt="">
+		  <div class="slider__caption">.Obj format gives you all the textures</div>
+    </div>
+	  
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section>
+	<p class="text-justify">
+		      Since my last experience with 3D scanning using a hand held device didn't give me very satifying results, I turned to <i><a href="http://www.photogrammetry.com/" target="_blank">photogrammetry</a></i>. I used the same plant with a pot for photogrammetry, this will also give me a chance to compare the results of using 3D scanner and photogrammetry. In very simple terms, photogrammetry creates a 3D model using images captured from from several positions and locations of the object (targeted point). There are many <i><a href="https://all3dp.com/1/best-photogrammetry-software/" target="_blank">softwares</a></i> available in the market to perform photogrammetry but I chose <i><a href="https://www.autodesk.com/products/recap/free-trial" target="_blank">Autodesk Recap Photo</a></i>, since it provides a free student license for upto 3 years. It is a cloud based service hence a strong internet connection(10 Mbps and above) is strongly recommended otherwise be ready to spend more than half a day uploading and downloading. Autodesk Recap Photo has some amazing capabilities, from scanning small objects, it can also scan and create 3D files of a terrain using a drone scanner. There are limitations of student version that I will discuss later. <br><br>
+		    The steps to use Autodesk Recap Photo are briefly described below, also I found this <i><a href="https://www.youtube.com/watch?v=D7Torjkfec4" target="_blank">tutorial</a></i> helpful: <br><br>
+		1. Use a good camera with number of pixels on the higher side(10 megapixel or above). I used my Canon 60D to click photographs.<br><br>
+		2. Try to have a proper illumination of the object to be scanned.<br><br>
+		3. Take photographs from 3 levels, one at the object level, one below the object level and the last above the object level. From all those 3 levels, take photos circumnavigating around the object. Keep an angle of around 10-15 degree between two successive intervals. I preferred taking around 35 photos from each level, in total 107 photographs.<br><br>
+		4. Open Autodesk Recap Photo now and select "object" under "Create 3D". It needs a minimum of 20 photographs to create a 3D model. Since I had clicked 107 photographs one of the major drawbacks of student version is that it allows only 100 images and gives you 25 GB. Now all these photographs are uploaded to the cloud. This process is solely dependent on your internet speed. It took me around 6 hours to upload due to slow internet speed.<br><br>
+		5. Next, you can download the 3D model from the cloud. It again took me an hour to download the 3D file.<br><br>
+		6. I was surprized to see the result, it was far more better than 3D scanning using Sense 3D. I really liked the texture and considering that it was a plant and geometry is complincated, I was really happy. <br><br>
+		7. Next if you want to edit the 3D mesh model, you can download it. It gives you many formats to download, firstly I tried .stl format but stl format didn't provide the textures. I went back and downloaded the files in .obj format with textures. <br><br>
+		
+	In a nutshell, if I want to compare Sense 3D and Photogrammtry both have its advantages and disadvantages. Sense 3D gives results in quick time but the results aren't that great. If good results are needed one needs to have a proper setup. Sense 3D would cost you 500 USD and not everyone can afford it. On the other hand, with everyone hvaing a smartphone, taking photographs with good quality have became very easy. The only thing needed is a software like AUtodesk Recap Photo, since there are many free softwares available in the market, this won't be an issue. The only disadvantage is the amount of time it takes. 100 photos on an average would be around 600 MB. Compressing photos here is not an option since it reduces the quality. Hence both of them have their own advantages based on personal choices.<br><br>
+		Download the file <i><a href="https://drive.google.com/file/d/1PPEF40k72noH4SgkKvfwzRt-N71mS5NE/view?usp=sharing" download>here</a></i>
+	
+		
+			</p>
+		 </div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		ALL PROJECTS WERE CREATED UNDER CREATIVE COMMONS LICENSE<br/>
+		CREATED AT VIGYAN ASHRAM, PUNE UNDER FAB ACADEMY
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/myeqlr.js"></script>
+</body>
+</html>
