@@ -875,14 +875,15 @@ html {
 
 
 .Iam {
-  padding: 6em 8.5em;
-  font: normal 40px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 8em 7.5em;
+  font: normal 35px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: center;
   color: black;
+  background-color: white;
 }
 .Iam p {
-  height: 220px;
-  font: normal 40px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  height: 230px;
+  font: normal 35px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
   position: center;
   float: left;
   margin-right: 0.3em;
@@ -908,53 +909,40 @@ html {
    -moz-animation:move 5s;
     -ms-animation:move 5s;
      -o-animation:move 5s;
-        animation:move 5s;
 /*animation-iteration-count*/
 -webkit-animation-iteration-count:infinite;
    -moz-animation-iteration-count:infinite;
     -ms-animation-iteration-count:infinite;
      -o-animation-iteration-count:infinite;
-        animation-iteration-count:infinite;
 /*animation-delay*/
 -webkit-animation-delay:1s;
    -moz-animation-delay:1s;
     -ms-animation-delay:1s;
      -o-animation-delay:1s;
-        animation-delay:1s;
 }
 @keyframes move{
 0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
-60% { top: -150px; }
-80% { top: -200px; }
+33% { top: -42px; }
+66% { top: -84px; }
 }
 
 @-webkit-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
+0%  { top: 0px; }
+33% { top: -42px; }
+66% { top: -84px; }
 }
 @-moz-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
+0%  { top: 0px; }
+33% { top: -42px; }
+66% { top: -84px; }
 }
 @-o-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
+0%  { top: 0px; }
+33% { top: -42px; }
+66% { top: -84px; }
 }
-@keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
+
+.spacing {
+	margin-top: 2.5cm;
+	margin-bottom: 2.5cm;
 }
