@@ -875,7 +875,7 @@ html {
 
 
 .Iam {
-  padding: 8em 7.5em;
+  padding: 8em 6.5em;
   font: normal 35px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: center;
   color: black;
@@ -945,4 +945,11 @@ html {
 .spacing {
 	margin-top: 2.5cm;
 	margin-bottom: 2.5cm;
+}
+
+.spacing2 {
+	margin-top: 2.5cm;
+	margin-bottom: 2.5cm;
+	margin-left: 0cm;
+	margin-right: 0cm;
 }
