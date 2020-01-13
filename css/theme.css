@@ -157,9 +157,15 @@ ul {
 .intro .intro-body .brand-heading {
     font-size: 40px;
 }
+
+.intro .intro-body .brand-heading2 {
+    font-size: 80px;
+}
+
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+
 @media(min-width:768px) {
 	.intro {
 		height:100%;
@@ -650,10 +656,11 @@ html, body {
 .slider__caption {
   position: absolute;
   bottom: 30px;
+  right: 30px;
   left: 30px;
   display: block;
-  max-width: 900px;
-  padding: 10px;
+  max-width: 1200px;
+  padding: 2px;
   color: #fff;
   opacity: 0.9;
   background: rgba(0, 0, 0, .6);
@@ -836,6 +843,7 @@ html {
   padding: 10px;
   display: flex;
   flex-flow: row wrap;
+  
 }
 .card-container:hover .card {
   opacity: .7;
@@ -864,15 +872,14 @@ html {
   margin: 0;
 }
 .card-container .card .content {
-  padding: 15px 20px;
+  padding: 10px 10px;
 }
 .card-container .card h3 {
   font: 2.8rem ;
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
   letter-spacing: -.015rem
 }
-
 
 .Iam {
   padding: 8em 6.5em;
@@ -949,7 +956,48 @@ html {
 
 .spacing2 {
 	margin-top: 2.5cm;
-	margin-bottom: 2.5cm;
+	margin-bottom: 0cm;
 	margin-left: 0cm;
 	margin-right: 0cm;
+    background-color: #F9F9F9;
+	#padding: 10px;
+}
+
+.gallery {
+  display: grid block;
+  max-width: 100%;
+  max-height: 50%;
+  margin: 0 auto;
+  grid-gap: 20px;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  padding: 20px;
+  
+}
+
+.gallery-item {
+  max-width: 100%;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.05);
+  transition: .15s all ease;
+}
+
+.gallery-item:hover {
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.05);
+	transform: scale(1.005);
+	transition: .15s all ease;
+  }
+
+.gallery-item img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+.gallery .gallery-item .contentt {
+  padding: 10px 10px;
+}
+.gallery .gallery-item h3 {
+  font: 2.8rem ;
+  padding: 0;
+  margin: 0 0 0px;
+  letter-spacing: -.015rem
 }
