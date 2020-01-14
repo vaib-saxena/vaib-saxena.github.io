@@ -841,10 +841,11 @@ html {
   max-width: 100%;
   margin: 0 auto;
   padding: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  
+  display: grid block;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
 }
+
 .card-container:hover .card {
   opacity: .7;
   cursor: pointer;
