@@ -837,13 +837,14 @@ html {
 }
 
 .card-container {
-   max-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 10px;
   display: flex;
   flex-flow: row wrap;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;;
+  text-align: center;
 }
 
 .card-container:hover .card {
@@ -888,6 +889,7 @@ html {
   position: center;
   color: black;
   background-color: white;
+  text-align: center;
 }
 .Iam p {
   height: 230px;
