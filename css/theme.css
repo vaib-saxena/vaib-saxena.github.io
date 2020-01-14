@@ -844,7 +844,6 @@ html {
   flex-flow: row wrap;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;;
-  text-align: center;
 }
 
 .card-container:hover .card {
@@ -889,7 +888,6 @@ html {
   position: center;
   color: black;
   background-color: white;
-  text-align: center;
 }
 .Iam p {
   height: 230px;
