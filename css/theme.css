@@ -838,12 +838,14 @@ html {
 }
 
 .card-container {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  padding: 10px;
   display: grid block;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;;
   grid-gap: 10px;
+  padding: 10px;
 }
 
 .card-container:hover .card {
