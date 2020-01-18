@@ -1,15 +1,3 @@
-/*
-Bit patterns
-
-Controls:
-  - Move the mouse around.
-
-Author:
-  Jason Labbe
-
-Site:
-  jasonlabbe3d.com
-*/
 var canvas;
 var speed = 0.25;
 var maxSize = 15;

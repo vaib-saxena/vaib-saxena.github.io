@@ -1,8 +1,5 @@
 #include <CapacitiveSensor.h>
-
 #include <SoftwareSerial.h>
-
-
 
 
 const int rx=PA6;

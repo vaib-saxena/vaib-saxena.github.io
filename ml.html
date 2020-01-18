@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133557840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133557840-1');
+</script>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +21,6 @@
 <!-- Custom CSS -->
 <link href="css/theme.css" rel="stylesheet">
 <!-- Font Awesome -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <!-- Google Fonts -->   
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,24 +29,29 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<title>mySketch</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="js/sketch_bits.js"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
 <div class="container">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 		<i class="fa fa-bars"></i>
 		</button>
-		<a class="navbar-brand page-scroll" href="about.html"><strong> About</strong></a></div>
+		<a class="navbar-brand page-scroll" href="about.html"><strong>About</strong></a></div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 		<ul class="nav navbar-nav">
 		  <li> <a href="index.html"><strong>Home</strong></a> </li>
-		  <li> <a href="Final Project.html"><strong>Architecture</strong></a> </li>
-		  <li> <a <a><strong>Machines</strong></a></a></li>
-			<li> <a href="ml.html"><font color=#e74c3c><strong>Machine Learning</strong></font></a> </li>
-			<li> <a href="resume.html"><strong>Resume</strong></a> </li>
+		  <li> <a href="Final Project.html" target="_blank"><strong>Architecture</strong></a> </li>
+		  <li> <a href="machine.html" target="_blank"><strong>Machines</strong></a></li>
+			<li> <a href="ml.html" target="_blank"><font color=#e74c3c><strong>Machine Learning</strong></font></a> </li>
+			<li> <a href="resume.html" target="_blank"><strong>Resume</strong></a> </li>
 		  <li> <a href="resume.html"><strong>Contact</strong></a> </li>
 		</ul>
 </div>
@@ -48,7 +61,30 @@
 </nav>
 <!-- Intro Header -->
 <header class="intro">
-				<div class="spacing2">
+   <div class="intro-body">
+	<div class="container">
+		<div class="row">	
+			
+  <div class="gallery col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-12">
+<h1 class="brand-heading text-capitalize text-center">Machine Learning</font></h1>
+</div>	
+						
+          		</div>
+	</div>
+</div>						
+</header>
+<div class="Iam2">
+	<div class="container content-section text-center">
+	
+		<div class="col-lg-6 col-lg-offset-6">
+			<p class="text-left"><font size="6px">
+				 The following projects are a series of individual work done while studying at <b><a href="https://plaksha.org/techleaders" target="_blank">Plaksha Tech Leaders Fellowship</a></b>. I use Machine Learning as a tool to devise new solutions for existing problems in the realm of design.
+				</font></p>
+			
+		</div>
+</div>
+	</div>
+
                 <!-- Replace the e-mail address -->
 					<section>
 						<br>
@@ -57,8 +93,8 @@
     <div class="gallerry-item">
 		<a href="rl.html" target="_blank">
       <img src="img/unity.gif" />
-		<div class="contentt">
-        <h3 class="text-justify"><font color="black">Space Con</font></h3>
+		<div class="content">
+        <h3 class="text-justify"><font color="black">SpaceOp</font></h3>
 			<p class="text-justify"><font color="black">Spatial Furniture Arrangement using Reinforcement Learning<br>
 			Independent work in a group - 2019</font></p>
 			 </div>
@@ -90,11 +126,8 @@
 	</ul>
 </div>	
 						
-           </section>	
-</div>						
-           	  </div>
-
-</header>
+</section>					
+       
 <!-- Contact Section -->
 <section id="contact">
 <div class="container content-section text-center">
