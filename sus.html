@@ -34,7 +34,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" background="img/tsnee.jpg">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 
@@ -81,21 +81,18 @@
 	  <div class="col-lg-offset-0 col-lg-12">
 		  <h2>Brief Overview</h2>
 	    <p class="text-justify">
-				The visual nature of a building gives us clues about the function and typology of a building. But in the 21st century, the boundary of visual interpretation has seemingly intermingled and no longer an apartment looks like an apartment or a hospital looks like one. Moreover, the two of them might share a lot of visual similarities.<br>
+				The cancerous growth of Indian cities that once used to be pin-pricked by water bodies have completely neglected public spaces around water and also the birth of new ones. Water forms the crux of our cities and is an engineered system planned, developed and operated. Water systems are closely related to ecological and energy flows of our environment. The neo-banal and monotonous infrastructure including the new and old neighborhoods hardly takes into consideration, the creation of new water infrastructure that promotes ecology, ground water recharge and rejuvenation of existing water bodies. Less and less resources are expended on the its creation by the public as well as private sector. Will this process cease any time soon or will continue to happen till the time, the memory of public water spaces ceases to exist. The city of Hyderabad has been once such place, punctured with uncontrolled urbanization around water, polluting it.<br>
 
-This project is a work in progress research on architectural typology classification using state-of-the-art deep learning algorithms to find visual similarities and differences between various buildings of several typologies from a machine's point of view . I web scraped close to 6000 images, spread across 14 categories/classes and used Deep Convolutional Neural Network to classify images providing a quantifiable measure of difference and similarities between various typologies with an accuracy of 82%. The results were further analyzed and visualized to see which features were picked by the Neural Network to classify images. Please find code on my website.</p><br>
-		  <p><strong>Data Collection</strong></p>
-		  <p class="text-justify">
-		 Each category has minimum of 250 images with maximum being 600 images. The next version should have equal number of images to prevent bias. The current dataset is available to the public through my google drive <i><a href="https://drive.google.com/open?id=1w4tNCwd17x6UpNJ-us8eEitjISQKhV4n" target="_blank">link</a></i>: The various categories are 'Apartment interiors', 'Apartments',  'Bridge',  'Church',  'Hotels',  'Kindergarten',  'Museum',
- 'Museum interior',  'Office', 'Office interior', 'Stadiums', 'Store', 'University'
-		</p>
-		  <p><strong>Snapshot of various classes</strong></p>
+
+This research project not only looks at one point of view through architecture or urbanism but rather employs multiple view points to understand and present interventions to manage urban ecosystem and infrastructures. Policy making, economics, long term investment, public private partnerships, healthy community relationship has been looked at in-depth and the solutions provided are both long term as well as short term.</p><br>
+		  
+		  <p><strong>Snapshot of River Musi bifurcating the city of Hyderabad with several lakes around</strong></p>
 		  
 		 <section id="gallery">
   <div class="slider-container first">
   <div class="slider">
     <div class="slider__item">
-      <img src="img/input images.jpg" alt="">
+      <img src="img/sus/1.jpg" alt="">
     </div>
   </div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -109,20 +106,15 @@ This project is a work in progress research on architectural typology classifica
 </section> 
 		<br>
 		<br>
-		<p><strong>System Architecture, Transfer Learning and Iterations</strong></p>
+		<p><strong>Then and Now</strong></p>
 				<p class="text-justify">
-				In the Deep Convolutional Neural Network the features that a network learns isn't hand engineered but is rather dependent on the training examples. We will use a particular kind of architecture under Deep Convolutional Neural Network for image classification called ResNet50. Rather than training the model from scratch, pretrained weights of ImageNet were used(Transfer Learning) initially but the results weren't satisfactory. Hence a different method of training was used.
+				The condition of lakes and River Musi of Hyderabad in 18th and 19th century (on the left). The present day condition of the lakes (on the right). They have put enormous pressure and stress on the environment by becoming a hub of pollution. It hinders the growth of the city too. The lack of public interest is also contributed to the failure of this urban system. The need of the hour is to think of solutions that take into account various urban actors.
 				</p>
 				<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	   <div class="slider__item">
-      <img src="img/cnn.jpeg" alt="">
-      <div class="slider__caption">The working of how a neural network learns from the images by extracting features or particular visual clues and then classifying it</div>
-    </div>
-	   <div class="slider__item">
-      <img src="img/iter.jpg" alt="">
-      <div class="slider__caption">The details of various iterations using ResNet50 and ResNet152. The iterations were varied based on batch size, image size, epochs and accuracy.</div>
+      <img src="img/sus/Portfolio4.jpg" alt="">
     </div>
   </div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -136,31 +128,17 @@ This project is a work in progress research on architectural typology classifica
 </section>
 				</br>
 	</br>
-		  <p><strong>Actual Typology vs Predicted Typology</strong></p>
+		  
 		 
 
-	    <p class="text-justify"> <strong>55.6 % accuracy with ResNet50 using ImageNet weights after 10 epochs - Model 1</strong><br>
-		    I started with a default set of pretrained weights to train my neural network using Transfer Learning. The resultant accuracy didn't improve significantly. The results were very intuitive and just like we human beings in the real world find it hard to differentiate between several typologies, the neural network was clearly struggling to identify it. The underlying reason after analysis came out that the ImageNet weights used were trained on dogs and cats.<br>
-      <strong>Most confused/misclassified one&nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <strong>Least confused/misclassified ones</strong><br>
-('Office', 'Apartments', 37)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ('Kindergarten', 'Church', 2) <br>
-		    ('Office', 'University', 24)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ('Kindergarten', 'Museum interior', 2) <br>
-		    ('Apartment interiors', 'Office interior', 22)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;('Museum interior', 'Airport', 2) <br>
-		    ('Hotels', 'Apartments', 21)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;('Museum interior', 'Church', 2)</p>
-		  <p class="text-justify"><br>
-		    <strong>82.78 % accuracy with ResNet50 using Places365 weights after just 2 epochs - Model 12</strong> <br>
-	    After much attempts the accuracy wasn't increasing above 60% and the model started to overfit. Hence, I used weights of a pre-trained model like Places365 that is more similar to my dataset as compared to ImageNet. The accuracy increased by 18% and after few more epochs reached 80%. The batch size needs to be small so that the network could generate correlation between various images.<br>
-			  <strong>Most confused/misclassified one&nbsp; &nbsp; &nbsp;&nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <strong>Least confused/misclassified ones</strong><br>
-('Office', 'Apartments', 10)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;('Church', 'Bridge', 2) <br>
-		    ('Hotels', 'Apartments', 9)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ('Hotels', 'Airport', 2) <br>
-		    ('Office interior', 'Apartment interiors', 8)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ('Kindergarten', 'Church', 2) <br>
-	    ('University', 'Office', 8)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;('Stadiums', 'Museum', 2)</p>
+	    <p class="text-justify"> IDL Lake forms the backbone of this project or one can imagine an experimental ground before implementing the policies and solutions on a larger city scale. Its one of the important lakes for the surrounding neighborhood community and deteriorating day by day because of uncontrolled urbanization.</p>
+		 
 	    <br>
 		<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	<div class="slider__item">
-      <img src="img/confusion.jpg" alt="">
-      <div class="slider__caption">55.6 % accuracy with ResNet50 using ImageNet weights after 10 epochs - Model 1(on the left) vs 82.78 % accuracy with ResNet50 using Places365 weights after just 2 epochs - Model 12</div>
+      <img src="img/sus/Portfolio6.jpg" alt="">
     </div> 
 	</div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -174,31 +152,17 @@ This project is a work in progress research on architectural typology classifica
 </section>
 					</br>
 	</br>
-		  <p><strong>Prediction/Actual/Loss/Probability</strong></p>
+		  
 		 
 
-		<p class="text-justify"> <strong>Top losses(images that were most confusing to classify by machine) - Model 1</strong><br>
-
-In the very initial model its was very hard for neural network to classify nearly 50 percent of the images into the right class. 
-But on the other hand this also tells us that how close those typologies are to each other. With my experience, a human being visually looking at the above images cannot tell which one is which.
-
-For example: The second image, the machine thought that its actually a kindergarten but in reality its a university. Now in real life also it makes sense because its hard to differentiate a university from a kindergarten in one instance.
-
-Furthermore, the sixth example, the network learnt that long spires are a visual feature of a church but when it sees a building with spires which is a university, it misclassifes it.  <br><br>
-<strong>Top losses(images that were most confusing to classify by machine) - Model 12</strong> <br>
-			In this particular section we used a very different way of analysing the losses.The pale yellow patches tell us where the machine was actually looking to classify that particular image. Again going through some examples here gives us a much ore indepth knowledge about architectural typology.
-
-In example one, the machine is looking at the long tower in the background.After training for some time , the machine would have learnt that long towers are only associated with airports and hence it misclassifies this hotel.
-
-Lets look at the fourth image. I provide lot of images of stores which displayed the front facade. In this image, its easy for a human to guess that its a church because one can read it, but the machine couldn't and hence it took it as a store than a church.
+		<p class="text-justify"> <strong>The analysis of the surroudings around the lake
 	</p>
 	<br>
 		<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	<div class="slider__item">
-      <img src="img/loss.jpg" alt="">
-      <div class="slider__caption">55.6 % accuracy with ResNet50 using ImageNet weights after 10 epochs - Model 1(on the left) vs 82.78 % accuracy with ResNet50 using Places365 weights after just 2 epochs - Model 12</div>
+      <img src="img/sus/Portfolio5.jpg" alt="">
     </div> 
 	</div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -211,24 +175,15 @@ Lets look at the fourth image. I provide lot of images of stores which displayed
 			</br>
 </section>
 </br></br>
-		  <p><strong>Interpreting the correctly classified images</strong></p>
+		  <p><strong>Intervention 1(left): Streets: 
+
+Sectional view of the street and water absorption system and Intervention 2(right): Empty plots are used to create ephemeral community and engineered filtration spaces until the plots get occupied</strong></p>
 	 <br>
-<p class="text-justify"> <strong>The buildings that had high probability</strong><br>
-
-One can clearly see in the above corretly classified images that the machine eye, looks at the features which we humans also look. Going from top to bottom, using the first image above, the context around bridge is tough to understand only if somone has experinences it before, but the machine eye only looks at that feature and correctly classifies it with a probability of 0.9.
-
-I was particularly baffled by example two because the machine is only looking some parts of the roof but mostly focussing on the fireworks and it guesses with a porbabilty of 0.7 that its a stadium<br><br>
-<strong>The buildings that had low probability but were classified correctly</strong> <br>
-			If I show the above images to an architect it would be very difficult for him/her to guess the typology of the building correctly in the very first go. Just by looking and analysing the facade at the same exact spot the machine was able to correctly clasify.
-
-From an architectural point of view we can definitely understand that form did a very important role in classifying the building typology correctly, but in the last decade or two, the boundary has been blurred because of cross country influences in design and architecture. This whole research was a step towards quantifying the classification process. 
-	</p>
 		<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	  <div class="slider__item">
-      <img src="img/interpret.jpg" alt="">
-      <div class="slider__caption">The buildings with high probability vs buildings with low probability</div>
+      <img src="img/sus/Portfolio7.jpg" alt="">
     </div>
   </div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -241,24 +196,15 @@ From an architectural point of view we can definitely understand that form did a
 			</br>
 </section> 
 </br></br>
-		  <p><strong>Varied features</strong></p>
+		  <p><strong>Intervention 3(left):  Creating a relationship between the school, horticulture and productive landscapes to boost social and economic sustainability and Intervention 4: Revitalization of water public space to improve tourism bringing in money</strong></p>
 	 <br>
-<p class="text-justify"> <strong>The buildings that had high probability</strong><br>
 
-In some of the examples above we also see that the machine intelligence looks at two very different features and predicts two different classes which may or may not be correct. 
-
-Taking the first example and a very famous. The obselisk behind is considered as spire of the church while the  when the machine looks at the buidings it thinks of a museum. 
-
-The same happens in the third example where, the curvy nature of the roof, confuses the neural netwrok between an airport and a museum.
-
-In the final example the gabled roof depicts a kindergarten while the background depicts an apartment.
-	</p>
 		<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	  <div class="slider__item">
-      <img src="img/varied.jpg" alt="">
-      <div class="slider__caption">The buildings whose features displayed duality and various probabilities for those features</div>
+      <img src="img/sus/Portfolio8.jpg" alt="">
+      
     </div>
   </div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -270,20 +216,13 @@ In the final example the gabled roof depicts a kindergarten while the background
 </div>
 			</br>
 </section> </br></br>
-<p><strong>Visualization</strong></p>
+<p><strong>Intervention 5: New temple and bridge as a maker, connector and facilitator on landscape to attract people from the other side.and initiate the process of cleaning the "nallah" flowing into the lake</strong></p>
 	 <br><br>
-<p class="text-justify"> <strong>Neural Network Visualization</strong><br>
-
-The visualizations below are particulary fascinating. It shows several layers of the neural network and depicts what all things are being extracted from the image. 
-
-The above image is of the stadium and as the image goes forward only bare minimum essential features are extracted.
-	</p>
 		<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	  <div class="slider__item">
-      <img src="img/network.jpg" alt="">
-      <div class="slider__caption">First, second, third and last layer</div>
+      <img src="img/sus/Portfolio9.jpg" alt="">
     </div>
   </div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -295,16 +234,13 @@ The above image is of the stadium and as the image goes forward only bare minimu
 </div>
 			</br>
 </section> </br></br>
-<p class="text-justify"> <strong>TSNE Visualization</strong><br>
-
-TSNE is an algorithm that displays the various tyologies/classes in a lower dimension here two dimension. Furthermore, it also tells us which typology is closer to which one or which typology is farther away or different from which ones. Looking at the results, we can infer that Apartment, Museum, University and Office are really close to one another and its hard to differentiate between them sometimes. On the other hand, Kindergarten and Stadium are two very distinct entities which are opposite to each other. 
+<p class="text-justify"> <strong>Intervention 6: The proposed infrastructure for immersion of Ganesha idol during the Ganesh Chaturthi and Durga Puja festival</strong><br>. 
 	</p>
 		<section id="gallery">
  <div class="slider-container second">
   <div class="slider">
 	  <div class="slider__item">
-      <img src="img/tsne_new.jpg" alt="">
-      <div class="slider__caption">TSNE visulization in two dimentions</div>
+      <img src="img/sus/Portfolio10.jpg" alt="">
     </div>
   </div>
   <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
@@ -317,14 +253,47 @@ TSNE is an algorithm that displays the various tyologies/classes in a lower dime
 			</br>
 </section> 
 </br></br>
-<section> 
-<p> <strong>Code</strong><br><br>
 
-The Jupyter file(.ipynb) can be viewed <i><a href="https://colab.research.google.com/drive/17wIxJG23lfmG554xbJ9mfQAdq_OwTRZX" target="_blank">here.</a></i>The pdf below is for the reference.
+<p class="text-justify"> <strong>Intervention 7: A proposed community wetland park where all the filtrated storm water is channelized holds it, even during the times of flood, acting as a resilient urban infrastructure</strong><br>. 
 	</p>
-    <iframe src="img/ArchNet_2.pdf" width="100%" height="600px">
-    </iframe>
-		  </section>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/sus/Portfolio11.jpg" alt="">
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+</br></br>
+
+
+<p class="text-justify"> <strong>Resilient and native tree species are selected to contribute to economic and environmental sustainability. The trees provide economic benefits to the local stakeholder i.e. farmers and the official publication of the book coauthored with Prof. Stepher Goldsmith</strong><br>. 
+	</p>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/sus/Portfolio12.jpg" alt="">
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+</br></br>
 
 
 
