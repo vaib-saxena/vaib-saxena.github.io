@@ -68,7 +68,7 @@
 			<div> 
 			<div class="col-md-8 col-md-offset-2">
 			  <h1 class="brand-heading2">SpaceOp</h1>
-			  <p><font size="5"><strong>Space Furniture Arrangement using Reinforcement Learning
+			  <p><font size="5"><strong>Spatial Furniture Arrangement using Reinforcement Learning
 </strong></font></p>
 			</div>
 		</div>
@@ -119,16 +119,97 @@ of optimizing the floor plan of an office space by moving the objects in it and 
 effectively optimizing the occupancy of that room.<br><br>
 			  <strong> <i>As the lead of the project, I was handling the Reinforcement Learning part. The reason I choose reinforcement learning for spatial arrangement in particular was to create an agent that could learn through experiences/training in very different 3D plans and then could be deployed in a new 3D plan to optimally arrange the spatial layout.</i></strong> 
 		</p>
+		    
+		  
 		  <p><strong>The challenge</strong></p><i>
 		  <h2>"Which state-of-the-art platform do we use such that we can create a custom 3D environment with a possibility of scaling up from single agent to multi-agent reinforcement learning in a robust manner?</h2></i>
 		  
 
-		  <p><strong>Comparision between 50,000 steps with PPO and SAC</strong></p>
-		 
+		  <p><strong>Various platforms and solution</strong></p>
+		  <p class="text-justify">I only relied on two famous platforms due to 6 week time crunch. the first one was using open AI gym which was being tried out by my team mate and it came with lot of problems. The ajor problem being the environment. The 3D enevironment was a must for our project and creating a new 3D environment for Open AI gym wasn't feasible. I came across Unity ML Agents and soon realized that creating a custom environment in Unity is much more easier. The only challenge in using Unity was that it uses C#. But finally, I had to use Unity ML agents due to its ease of use.       </p>
+		  
+		  
+		  <p><strong>Rewards-Setup- PPO vs SAC</strong></p>
+		  <p class="text-justify"> As discussed earlier, for reinforcement learning we need an environment that can provide us with information when an agent performs some actions in that particular space. The information is provided in form of vectors. Furthermore, rewards are also given to the agent when the agent performs an action that brings it closer to the desired goal and penalties when it moves away from the desired goal. This process helps in generating an optimal strategy to achieve the goal. In our case whenever the agent takes a step closer to the window, we reward it and penalize it fractionally for every step it takes. Our goal at this point of time is just limited to training the agent to achieve one particular task, a simple arrangement of the furniture close to window. We will define our rewards and penalties formally here: <br><br>
+			  Agent Reward Function:<br>
+    -0.0025 for every step.<br>
+    +1.0 for everytime the agent moves the table-chair to touch the window<br><br><br>
+			  To make the training much better and faster in terms of learning about the environment and performing better, I copied the 3D environment 10 times such that the agent will learn in an efficient manner. All the 10 3D environments are different and keep on changing everytime the agent moves the table and chair to the window. This also helps the agents not make the same mistake again but do those actions that maximize the reward.<br><br><br>
+			  Due to the advancement in algorithms, Unity ML agents offers two important state of the art algorithms called Proximal Policy Optimization(PPO) and Soft Actor Critic. While PPO on one hand a neural network to approximate the ideal function that maps an agent's observations to the best action an agent can take in a given state, the SAC learns from experiences collected at any time during the past as they are placed in an experience replay buffer and randomly drawn during training.SAC is better when the environment is heavy. 
+			  
 
+		  
+		  </p>
+		  <section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <img src="img/RL/rl.jpg" alt="">
+      <div class="slider__caption">The agent performs action in the environment and based on the action, rewards or penalties are provided </div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+</br></br>
+		  <p><strong>Model 1, max_steps = 50,000, PPO and SAC</strong></p>
+	 <br>
+<p class="text-justify"> 
+The very first model that I trained with PPO took about half an hour to train but the one could clearly see the agent is struggling to move around the chair and the table to the window. Hence some changes are needed to be done in the hyperparameters. Here the blue box is the agent and the brown object is table and chair.
+	</p>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <iframe src="https://player.vimeo.com/video/386286091?autoplay=1&loop=1&muted=1" width="1120" height="628" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="slider__caption">Model 1, max_steps = 50,000, </div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+</br></br>
+	<br>
+<p class="text-justify"> 
+One can clearly see here that SAC is performing really badly as compared to the PPO. The probable reason being that since SAC is off policy, there are chances that during the random selection of an experience, it moves towards exploring the environment more. 
+
+	</p>
+		<section id="gallery">
+ <div class="slider-container second">
+  <div class="slider">
+	  <div class="slider__item">
+      <iframe src="https://player.vimeo.com/video/386289608?autoplay=1&loop=1&muted=1" width="1120" height="629" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="slider__caption">Model 1, max_steps = 50,000 with SAC</div>
+    </div>
+  </div>
+  <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span>
+  </div>
+  <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span>
+  </div>
+</div>
+			</br>
+</section> 
+</br></br>
+		  
+		  
+		  <p><strong>Comparision between 50,000 steps with PPO and SAC</strong></p>
 		<p class="text-justify"> 
 
-This was sort of an experimental phase where I was training the agent using two separate algorithms on two different occasions. After several attempts 50,000 steps seemed to be making the agent experienced enough for placing the table and chair close to the window in decent amount of time. Following were the hyperparmeters that were used during training on two different occasions:<br><br>
+This was sort of an experimental phase where I was training the agent using two separate algorithms i.e Proximal Policy Optimization and Soft-Actor Critic on two different occasions. After several attempts 50,000 steps seemed to be making the agent experienced enough for placing the table and chair close to the window in decent amount of time. Following were the hyperparmeters that were used during training on two different occasions:<br><br>
 			trainer:         Proximal Policy Optimization(PPO)  <br>
         batch_size:     128 <br>
         beta:   0.01 <br>
@@ -317,10 +398,213 @@ Having successfully realized Single agent -- Single furniture spatial arrangemen
 <section> 
 <p> <strong>Code</strong><br><br>
 
-The Jupyter file(.ipynb) can be viewed <i><a href="https://colab.research.google.com/drive/17wIxJG23lfmG554xbJ9mfQAdq_OwTRZX" target="_blank">here.</a></i>The pdf below is for the reference.
+As mentioned above one of the challenges in this project was my very first encounter with C# but since its based on Object Oriented Programming understnaidng and writing the code didn't took much time. There are three parts of the code that one has to write to train the agent in Unity ML agents. One code is dedicated to the Academy in which everything(environment) happens, one is dedicated to the agent and another one is dedicated to detecting windows.
 	</p>
-    <iframe src="img/ArchNet_2.pdf" width="100%" height="600px">
-    </iframe>
+	<code class="text-justify">
+	using System.Collections;<br>
+using UnityEngine;<br>
+using MLAgents;<br>
+
+public class OfficeBasic : Agent<br>
+{<br>
+
+    public GameObject ground;<br>
+    public GameObject area;<br>
+    [HideInInspector]<br>
+    public Bounds areaBounds;<br>
+
+    OfficeAcademy m_Academy;><br>
+    public GameObject goal;<br>
+    public GameObject block;<br>
+    public GameObject bloc;<br>
+    [HideInInspector]<br>
+    public WindowDetect winDetect;<br>
+    [HideInInspector]<br>
+    public WindowDetect winDetec;<br>
+
+    public bool useVectorObs;<br>
+
+    Rigidbody m_BlockRb;  <br>
+    Rigidbody m_BlocRb;<br>
+    Rigidbody m_AgentRb;  <br>
+    Material m_GroundMaterial; //cached on Awake()<br>
+    RayPerception m_RayPer;<br>
+
+    float[] m_RayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };<br>
+    string[] m_DetectableObjects = { "block", "goal", "wall" };<br>
+    Renderer m_GroundRenderer;<br>
+
+    void Awake()<br>
+    {<br>
+        m_Academy = FindObjectOfType<OfficeAcademy>();<br>
+    }<br>
+
+    public override void InitializeAgent()<br>
+    {<br>
+        base.InitializeAgent();<br>
+        winDetect = block.GetComponent<WindowDetect>();<br>
+        winDetect.agent = this;<br>
+        winDetec = bloc.GetComponent<WindowDetect>();<br>
+        winDetec.agent = this;<br>
+        m_RayPer = GetComponent<RayPerception>();<br>
+        m_AgentRb = GetComponent<Rigidbody>();<br>
+        m_BlockRb = block.GetComponent<Rigidbody>();<br>
+        m_BlocRb = bloc.GetComponent<Rigidbody>();<br>
+        areaBounds = ground.GetComponent<Collider>().bounds;<br>
+        m_GroundRenderer = ground.GetComponent<Renderer>();<br>
+        m_GroundMaterial = m_GroundRenderer.material;<br>
+
+        SetResetParameters();<br>
+    }<br>
+
+    public override void CollectObservations()<br>
+    {<br>
+        if (useVectorObs)<br>
+        {<br>
+            var rayDistance = 20f;<br>
+
+            AddVectorObs(m_RayPer.Perceive(rayDistance, m_RayAngles, m_DetectableObjects, 0f, 0f));<br>
+            AddVectorObs(m_RayPer.Perceive(rayDistance, m_RayAngles, m_DetectableObjects, 1.5f, 0f));<br>
+        }<br>
+    }<br>
+    public Vector3 GetRandomSpawnPos()<br>
+    {<br>
+        var foundNewSpawnLocation = false;<br>
+        var randomSpawnPos = Vector3.zero;<br>
+        while (foundNewSpawnLocation == false)<br>
+        {<br>
+            var randomPosX = Random.Range(-areaBounds.extents.x * m_Academy.spawnAreaMarginMultiplier,<br>
+                areaBounds.extents.x * m_Academy.spawnAreaMarginMultiplier);<br>
+
+            var randomPosZ = Random.Range(-areaBounds.extents.z * m_Academy.spawnAreaMarginMultiplier,<br>
+                areaBounds.extents.z * m_Academy.spawnAreaMarginMultiplier);<br>
+            randomSpawnPos = ground.transform.position + new Vector3(randomPosX, 1f, randomPosZ);<br>
+            if (Physics.CheckBox(randomSpawnPos, new Vector3(2.5f, 0.01f, 2.5f)) == false)<br>
+            {<br>
+                foundNewSpawnLocation = true;<br>
+            }<br>
+        }<br>
+        return randomSpawnPos;<br>
+    }<br>
+
+    public void ScoredAGoal()<br>
+    {<br>
+        AddReward(5f);<br>
+        Done();<br>
+        StartCoroutine(GoalScoredSwapGroundMaterial(m_Academy.goalScoredMaterial, 0.5f));<br>
+    }<br>
+    IEnumerator GoalScoredSwapGroundMaterial(Material mat, float time)<br>
+    {<br>
+        m_GroundRenderer.material = mat;<br>
+        yield return new WaitForSeconds(time);<br>
+        m_GroundRenderer.material = m_GroundMaterial;<br>
+    }<br>
+    public void MoveAgent(float[] act)<br>
+    {<br>
+        var dirToGo = Vector3.zero;<br>
+        var rotateDir = Vector3.zero;<br>
+
+        var action = Mathf.FloorToInt(act[0]);<br>
+        switch (action)<br>
+        {<br>
+            case 1:<br>
+                dirToGo = transform.forward * 1f;<br>
+                break;<br>
+            case 2:<br>
+                dirToGo = transform.forward * -1f;<br>
+                break;<br>
+            case 3:<br>
+                rotateDir = transform.up * 1f;<br>
+                break;<br>
+            case 4:<br>
+                rotateDir = transform.up * -1f;<br>
+                break;<br>
+            case 5:<br>
+                dirToGo = transform.right * -0.75f;<br>
+                break;<br>
+            case 6:<br>
+                dirToGo = transform.right * 0.75f;<br>
+                break;<br>
+        }<br>
+        transform.Rotate(rotateDir, Time.fixedDeltaTime * 200f);<br>
+        m_AgentRb.AddForce(dirToGo * m_Academy.agentRunSpeed,<br>
+            ForceMode.VelocityChange);<br>
+    }<br>
+    public override void AgentAction(float[] vectorAction, string textAction)<br>
+    {<br>
+        MoveAgent(vectorAction);<br>
+        AddReward(-1f / agentParameters.maxStep);<br>
+    }<br>
+
+    public override float[] Heuristic()<br>
+    {<br>
+        if (Input.GetKey(KeyCode.D))<br>
+        {<br>
+            return new float[] { 3 };<br>
+        }<br>
+        if (Input.GetKey(KeyCode.W))<br>
+        {<br>
+            return new float[] { 1 };<br>
+        }<br>
+        if (Input.GetKey(KeyCode.A))<br>
+        {<br>
+            return new float[] { 4 };<br>
+        }<br>
+        if (Input.GetKey(KeyCode.S))<br>
+        {<br>
+            return new float[] { 2 };<br>
+        }<br>
+        return new float[] { 0 };<br>
+    }<br>
+    void ResetBlock()<br>
+    {<br>
+        block.transform.position = GetRandomSpawnPos();<br>
+        bloc.transform.position = GetRandomSpawnPos();<br>
+        m_BlockRb.velocity = Vector3.zero;<br>
+        m_BlocRb.velocity = Vector3.zero;<br>
+        m_BlockRb.angularVelocity = Vector3.zero;<br>
+        m_BlocRb.angularVelocity = Vector3.zero;<br>
+    }<br>
+    public override void AgentReset()<br>
+    {<br>
+        var rotation = Random.Range(0, 4);<br>
+        var rotationAngle = rotation * 90f;<br>
+        area.transform.Rotate(new Vector3(0f, rotationAngle, 0f));<br>
+
+        ResetBlock();<br>
+        transform.position = GetRandomSpawnPos();<br>
+        m_AgentRb.velocity = Vector3.zero;<br>
+        m_AgentRb.angularVelocity = Vector3.zero;<br>
+
+        SetResetParameters();<br>
+    }<br>
+
+    public void SetGroundMaterialFriction()<br>
+    {<br>
+        var resetParams = m_Academy.resetParameters;<br>
+
+        var groundCollider = ground.GetComponent<Collider>();<br>
+
+        groundCollider.material.dynamicFriction = resetParams["dynamic_friction"];<br>
+        groundCollider.material.staticFriction = resetParams["static_friction"];<br>
+    }<br>
+
+    public void SetBlockProperties()<br>
+    {<br>
+        var resetParams = m_Academy.resetParameters;<br>
+        m_BlockRb.transform.localScale = new Vector3(resetParams["block_scale"], 0.75f, resetParams["block_scale"]);<br>
+        m_BlocRb.transform.localScale = new Vector3(resetParams["block_scale"], 0.75f, resetParams["block_scale"]);<br>
+        m_BlockRb.drag = resetParams["block_drag"];<br>
+        m_BlocRb.drag = resetParams["block_drag"];<br>
+    }<br>
+
+    public void SetResetParameters()<br>
+    {<br>
+        SetGroundMaterialFriction();<br>
+        SetBlockProperties();<br>
+    }<br>
+}<br>
+</code>
 		  </section>
 
 
